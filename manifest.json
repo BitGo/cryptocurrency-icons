@@ -325,9 +325,9 @@
 		"color": "#fe5d86"
 	},
 	{
-	  "symbol": "BSC",
-	  "name": "BNB Smart Chain",
-	  "color": "#f3ba2f"
+		"symbol": "BSC",
+	  	"name": "BNB Smart Chain",
+		"color": "#f3ba2f"
 	},
 	{
 		"symbol": "BSD",
@@ -1003,6 +1003,11 @@
 		"symbol": "HNS",
 		"name": "Handshake",
 		"color": "#000000"
+	},
+	{
+		"symbol": "HNT",
+		"name": "HNT",
+		"color": "#38a2ff"
 	},
 	{
 		"symbol": "HODL",
@@ -1955,9 +1960,19 @@
 		"color": "#2d9cdb"
 	},
 	{
+		"symbol": "SUN",
+		"name": "SUN",
+		"color": "#f8ba3a"
+	},
+	{
 		"symbol": "SUSHI",
 		"name": "SushiSwap",
 		"color": "#d65892"
+	},
+	{
+		"symbol": "SWISE",
+		"name": "SWISE",
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "SYS",
@@ -2108,6 +2123,11 @@
 		"symbol": "UTK",
 		"name": "UTRUST",
 		"color": "#30367a"
+	},
+	{
+		"symbol": "VCNT",
+		"name": "VCNT",
+		"color": "#6fa340"
 	},
 	{
 		"symbol": "VERI",
