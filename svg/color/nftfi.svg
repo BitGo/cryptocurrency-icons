@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+	<title>nftfi</title>
+	<defs>
+		<image  width="32" height="32" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IB2cksfwAAALFQTFRF/f39+/v77Ozsw8LDj4+PQUFBExMTBAQERkZGioqK////+fn59fX13Nzcl5eXOzs7AQEBOTk57e3tmpqaLy8v6enpZ2ZnCgoKBgYG1dXV9/f3SUlJ2dnZjIyMnp6eYGBgFxcXXFxcQ0NDZGRkgoKC5+fnra2tICAgqKioh4eHyMjIGRkZk5OTzMzM4+PjoqKiERER8vLytra24ODgx8fHNzc33t7eJiYmVFRUsbGxMTEx+3M4BwAAAnhJREFUeJxVU2tP4kAUvbeC005BWxZXqbsGX9kYF7Px//+H/WDWDVEjPrAaYVuo7bSkdPbeFhXa5ELnnDlz5j4Q6EFNL2D5gDZwpjXwkpaEVQSbMSVBWfSCtuda6wQseCdIgRhBuUAcUABNbYzgQ8E2LAwtRkpKyTIL9aZB0sHaho1AA6MmBBZ8qKD7LBONng+NjTxkecUYM1T5Y4btIEY2354AOP92yGbIZyi9O072klTBt9uCYPklCy2zgU+AHg6IsI2PGrxaEICTCx9xN40siLtXZMgJCjr86/wJZHL8oC2oZQXaWTsF6NzHRFAnOARHXgK7338kG6M5buWabBVzJiS92QCa3kVp9OyOoo5wrTegP67zmwnnw0y1JzETDDmj2L1AS/DlHHNKJs+f56kQD7QRvEZ9yECGpi4Fu/enWf0lz9QZ/tmcHuSG3S8zVmDXXySvI8KQ9h5M2zPnuuEvKpOgeE9/ydLmId6KgF1VWVcVQfE3he8T+6blw9IehesSquwfvRyFdr83vV6WBAcPhuXC9s2v2Q3A4R0uwwp28cSvrvkAMcrkRxCuCNA113p/6Uz39Y0/vb1BuoJToo5HmmrMqab2Otq6XMEBa4inVySaGVwR9bMYruBiLBCagsrdGpjspHW16qCWRWhv1qhhRKuvodNw7z4tUP87Ypxwz1HLWeZ4B+vm9WeOyJhZjArqQ+1FG/PAqlp2iQDQnjZ96kkqUCdw0lJziaHc0MVJQkNFFbNdEaeLfVVpLOUWqohlSaDQSRtJVI1GVUMaPZ1R3zAh4fmTm9F6vj8gYXbDw9v0efBgQdA2RXeynrOgsfXE42/HyGr/ARZzJBMHON8oAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>
