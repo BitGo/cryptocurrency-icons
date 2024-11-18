@@ -59,5 +59,8 @@
 		"hooks": {
 			"pre-commit": "npm run manifest && npm run clean && npm run generate"
 		}
+	},
+	"dependencies": {
+		"cryptocurrency-icons": "^0.18.1"
 	}
 }
