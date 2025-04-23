@@ -5,7 +5,7 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-2" transform="translate(8.000000, 6.000000)" fill="#0FFFFF" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="15">
+        <g id="Group-2" transform="translate(8.000000, 6.000000)" fill="#0FFFFF" fill-rule="nonzero" stroke="#000000" stroke-width="15">
             <g id="dolomite-logo-svg-white" transform="translate(0.000000, 2.000000)">
                 <path d="M0,134 C0,59.9668491 59.9668491,0 134,0 C208.033151,0 268,59.9668491 268,134 C268,208.033151 208.033151,268 134,268 C59.9668491,268 0,208.033151 0,134 Z" id="svg_1" fill-opacity="0"></path>
                 <path d="M4,96.885334 C29.2032803,89.6194797 24.5885905,87.8895209 29.9132269,89.6194797 C35.2378632,91.3494465 126.439744,261.561575 127,264" id="svg_8" fill-opacity="0"></path>
