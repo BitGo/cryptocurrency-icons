@@ -13,23 +13,23 @@
 	xml:space="preserve"
 >
 	<style type="text/css">
-		.st0 {
+		.xava-st0 {
 			fill: url(#SVGID_1_);
 		}
-		.st1 {
+		.xava-st1 {
 			fill: url(#SVGID_2_);
 			filter: url(#Adobe_OpacityMaskFilter);
 		}
-		.st2 {
+		.xava-st2 {
 			mask: url(#mask0_1_);
 		}
-		.st3 {
+		.xava-st3 {
 			fill: url(#SVGID_3_);
 		}
-		.st4 {
+		.xava-st4 {
 			fill: url(#SVGID_4_);
 		}
-		.st5 {
+		.xava-st5 {
 			fill: url(#SVGID_5_);
 		}
 	</style>
@@ -46,7 +46,7 @@
 		<stop offset="1" style="stop-color: #ff0546" />
 	</linearGradient>
 	<path
-		class="st0"
+		class="xava-st0"
 		d="M12.4,2.3c1.5-3.1,5.7-3.1,7.2,0l11.6,23.1c2,4.1-2.5,8.3-6,5.6l-6.9-5.2c-1.4-1.1-3.3-1.1-4.8,0l-6.9,5.2
 	c-3.5,2.7-8-1.6-6-5.6L12.4,2.3z"
 	/>
@@ -86,12 +86,12 @@
 			<stop offset="1" style="stop-color: #ff0546" />
 		</linearGradient>
 		<path
-			class="st1"
+			class="xava-st1"
 			d="M12.4,2.3c1.5-3.1,5.7-3.1,7.2,0l11.6,23.1c2,4.1-2.5,8.3-6,5.6l-6.9-5.2c-1.4-1.1-3.3-1.1-4.8,0l-6.9,5.2
 		c-3.5,2.7-8-1.6-6-5.6L12.4,2.3z"
 		/>
 	</mask>
-	<g class="st2">
+	<g class="xava-st2">
 		<linearGradient
 			id="SVGID_3_"
 			gradientUnits="userSpaceOnUse"
@@ -105,7 +105,7 @@
 			<stop offset="1" style="stop-color: #ff0546" />
 		</linearGradient>
 		<path
-			class="st3"
+			class="xava-st3"
 			d="M-3.7,13.3c0-3.2,1.8-6.2,4.6-7.5c3-1.4,6.4-0.6,8.6,1.9l0.2,0.3c3.1,3.5,8.3,3.7,11.6,0.3L22,7.6
 		c2.3-2.4,5.7-3.1,8.7-1.8c3,1.3,4.9,4.4,4.9,7.9v15.4H-3.7V13.3z"
 		/>
@@ -123,7 +123,7 @@
 			<stop offset="1" style="stop-color: #ff0546" />
 		</linearGradient>
 		<path
-			class="st4"
+			class="xava-st4"
 			d="M-3.7,18.5c0-3.2,1.8-6.2,4.6-7.5c3-1.4,6.4-0.6,8.6,1.9l0.2,0.3c3.1,3.5,8.3,3.7,11.6,0.3l0.7-0.8
 		c2.3-2.4,5.7-3.1,8.7-1.8c3,1.3,4.9,4.4,4.9,7.9v15.4H-3.7V18.5z"
 		/>
@@ -141,7 +141,7 @@
 			<stop offset="1" style="stop-color: #ff0546" />
 		</linearGradient>
 		<path
-			class="st5"
+			class="xava-st5"
 			d="M-3.7,23.6c0-3.2,1.8-6.2,4.6-7.5c3-1.4,6.4-0.6,8.6,1.9l0.2,0.3c3.1,3.5,8.3,3.7,11.6,0.3l0.7-0.8
 		c2.3-2.4,5.7-3.1,8.7-1.8c3,1.3,4.9,4.4,4.9,7.9v15.4H-3.7V23.6z"
 		/>
