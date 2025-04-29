@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns:xodm="http://www.corel.com/coreldraw/odm/2003" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 2500 2500" style="enable-background:new 0 0 2500 2500;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;}
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
-	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000015322819383489716500000003191131096744284597_);}
-	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000089570960777946295980000017569556549841256381_);}
-	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000045621426836088678550000006918692680714721958_);}
-	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000103958429807614866890000006130468270351590061_);}
-	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000142148891714942069940000008143939354625074854_);}
-	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000093882590022389593730000004070144780221235604_);}
-	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000027593965995803099560000011148113213780002432_);}
-	.st9{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000105408250689305796700000003523336502805453466_);}
-	.st10{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000036225370906328628690000009168474936222412446_);}
-	.st11{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000172398993004027077300000009074049441474725258_);}
-	.st12{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000127751556077962694750000013293443879875934143_);}
-	.st13{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000096042805326696944590000015186611008040905389_);}
-	.st14{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000088098222563953825960000009825593108601467045_);}
-	.st15{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000018204960103925509570000012503499970058922405_);}
-	.st16{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000094597688371444718840000010309032933856431527_);}
-	.st17{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000045578694998973818660000017438900232892372661_);}
-	.st18{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000109740679795544661870000018380642238217568414_);}
-	.st19{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000047774998733251595820000017551413612372204732_);}
-	.st20{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000096764371705682784050000009186674527944189849_);}
-	.st21{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000041982084223436081850000001811855879814852779_);}
-	.st22{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000106114946677990319930000006045176426565537443_);}
-	.st23{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000042724152500269914470000004314730833987622060_);}
-	.st24{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000000910624729296469360000001000915699261595308_);}
-	.st25{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000178206527443210537340000006568352741362863757_);}
-	.st26{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000150084037562026596270000014792925331036940446_);}
+	.api3-st0 {fill-rule:evenodd;clip-rule:evenodd;}
+	.api3-st1 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+	.api3-st2 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000015322819383489716500000003191131096744284597_);}
+	.api3-st3 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000089570960777946295980000017569556549841256381_);}
+	.api3-st4 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000045621426836088678550000006918692680714721958_);}
+	.api3-st5 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000103958429807614866890000006130468270351590061_);}
+	.api3-st6 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000142148891714942069940000008143939354625074854_);}
+	.api3-st7 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000093882590022389593730000004070144780221235604_);}
+	.api3-st8 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000027593965995803099560000011148113213780002432_);}
+	.api3-st9 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000105408250689305796700000003523336502805453466_);}
+	.api3-st10 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000036225370906328628690000009168474936222412446_);}
+	.api3-st11 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000172398993004027077300000009074049441474725258_);}
+	.api3-st12 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000127751556077962694750000013293443879875934143_);}
+	.api3-st13 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000096042805326696944590000015186611008040905389_);}
+	.api3-st14 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000088098222563953825960000009825593108601467045_);}
+	.api3-st15 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000018204960103925509570000012503499970058922405_);}
+	.api3-st16 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000094597688371444718840000010309032933856431527_);}
+	.api3-st17 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000045578694998973818660000017438900232892372661_);}
+	.api3-st18 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000109740679795544661870000018380642238217568414_);}
+	.api3-st19 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000047774998733251595820000017551413612372204732_);}
+	.api3-st20 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000096764371705682784050000009186674527944189849_);}
+	.api3-st21 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000041982084223436081850000001811855879814852779_);}
+	.api3-st22 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000106114946677990319930000006045176426565537443_);}
+	.api3-st23 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000042724152500269914470000004314730833987622060_);}
+	.api3-st24 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000000910624729296469360000001000915699261595308_);}
+	.api3-st25 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000178206527443210537340000006568352741362863757_);}
+	.api3-st26 {fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000150084037562026596270000014792925331036940446_);}
 </style>
 <g id="Layer_x0020_1">
 	<g id="_2806123167536">
-		<rect y="0" class="st0" width="2500" height="2500"></rect>
+		<rect y="0" class="api3-st0" width="2500" height="2500"></rect>
 		<g>
 			
 				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="737.7904" y1="430.254" x2="607.6958" y2="1692.1721" gradientTransform="matrix(1 0 0 -1 0 2499.2756)">
@@ -42,7 +42,7 @@
 				<stop offset="0.549" style="stop-color:#FDFDFD"></stop>
 				<stop offset="1" style="stop-color:#FFFFFF"></stop>
 			</linearGradient>
-			<path class="st1" d="M318,2075h377l346-1311L303,2049c-10,10,0,26,16,26H318z"></path>
+			<path class="api3-st1" d="M318,2075h377l346-1311L303,2049c-10,10,0,26,16,26H318z"></path>
 			
 				<linearGradient id="SVGID_00000151518366963742479110000009879250187584820389_" gradientUnits="userSpaceOnUse" x1="952.2007" y1="1550.033" x2="951.5259" y2="1548.0045" gradientTransform="matrix(1512.0037 0 0 -346 -1437785.5 538038.375)">
 				<stop offset="0" style="stop-color:#C3C4C3"></stop>

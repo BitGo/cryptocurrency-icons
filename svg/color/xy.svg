@@ -3,14 +3,14 @@
 <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 627 627" style="enable-background:new 0 0 627 627;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:url(#SVGID_1_);}
+	.xy-st0 {fill:url(#SVGID_1_);}
 </style>
 <radialGradient id="SVGID_1_" cx="577.2743" cy="33.9701" r="827.621" gradientUnits="userSpaceOnUse">
 	<stop  offset="0" style="stop-color:#15D9E1"/>
 	<stop  offset="0.63" style="stop-color:#0D58EF"/>
 	<stop  offset="1" style="stop-color:#100E75"/>
 </radialGradient>
-<path class="st0" d="M313.5,0C140.4,0,0,140.4,0,313.5c0,71.3,23.8,136.9,63.8,189.6l168.6-166.8L106.6,210.2l168.3,0.1l42.4,42.2
+<path class="xy-st0" d="M313.5,0C140.4,0,0,140.4,0,313.5c0,71.3,23.8,136.9,63.8,189.6l168.6-166.8L106.6,210.2l168.3,0.1l42.4,42.2
 	l96-92.7h126L127.7,566c52,38.3,116.3,61,185.8,61C486.6,627,627,486.6,627,313.5S486.6,0,313.5,0z M362.3,462.8L320.2,421
 	l84.7-82.1l125.8,124L362.3,462.8z"/>
 </svg>

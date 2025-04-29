@@ -13,7 +13,7 @@
 	xml:space="preserve"
 >
 	<style type="text/css">
-		.st0 {
+		.qi-st0 {
 			fill: #00b3ed;
 		}
 	</style>
@@ -23,7 +23,7 @@
 				<rect id="Rectangle_48" x="25.5" y="12.5" width="5.3" height="13.2" />
 				<path
 					id="Path_64"
-					class="st0"
+					class="qi-st0"
 					d="M25.5,10.9l4.7-2c0.3-0.2,0.6-0.5,0.6-0.9V5.6l0,0l-4.4,1.9c-0.5,0.2-0.8,0.7-0.8,1.2
 				L25.5,10.9z"
 				/>
@@ -35,7 +35,7 @@
 				/>
 				<path
 					id="Path_66"
-					class="st0"
+					class="qi-st0"
 					d="M20.4,25.7h-5.5L11.5,18H17L20.4,25.7z"
 				/>
 			</g>

@@ -10,8 +10,7 @@
 		"32@2x",
 		"128",
 		"svg",
-		"react",
-		"manifest.json"
+		"react"
 	],
 	"keywords": [
 		"cryptocurrency",
@@ -40,7 +39,6 @@
 	],
 	"scripts": {
 		"test": "xo",
-		"manifest": "node scripts/manifest.js",
 		"generate": "node generate",
 		"clean": "svgo --multipass --disable=removeViewBox --enable=addViewBox $(globby {svg,originals}/**/*.svg)"
 	},
@@ -57,7 +55,7 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "npm run manifest && npm run clean && npm run generate"
+			"pre-commit": "npm run clean && npm run generate"
 		}
 	},
 	"dependencies": {
