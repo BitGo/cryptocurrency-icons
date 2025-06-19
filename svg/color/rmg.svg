@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+  .bg-icon-rmg-white{fill:#FFFFFF;}
+  .bg-icon-rmg-gold{fill:#AE935D;}
+</style>
+<title>RMG</title>
+<g>
+	<circle class="bg-icon-rmg-gold" cx="32" cy="32" r="29"/>
+	<rect x="20.7" y="41.2" class="bg-icon-rmg-white" width="4.4" height="4.1"/>
+	<rect x="20.7" y="35.5" class="bg-icon-rmg-white" width="4.4" height="4.1"/>
+	<rect x="20.7" y="29.9" class="bg-icon-rmg-white" width="4.4" height="4.1"/>
+	<rect x="20.7" y="24.2" class="bg-icon-rmg-white" width="4.4" height="4.1"/>
+	<rect x="20.7" y="18.5" class="bg-icon-rmg-white" width="4.4" height="4.1"/>
+	<polygon class="bg-icon-rmg-white" points="31.1,51.3 26.8,51.3 26.8,47.1 31.2,47.1 	"/>
+	<polygon class="bg-icon-rmg-white" points="31.1,16.9 26.8,16.9 26.8,12.7 31.2,12.7 	"/>
+	<polygon class="bg-icon-rmg-white" points="32.8,12.7 37.2,12.7 37.2,16.9 32.8,16.9 	"/>
+	<polygon class="bg-icon-rmg-white" points="37.2,51.3 32.8,51.3 32.8,47.1 37.2,47.1 	"/>
+	<polygon class="bg-icon-rmg-white" points="37.2,34 32.8,34 32.8,29.9 37.3,29.9 	"/>
+	<polygon class="bg-icon-rmg-white" points="43.2,51.3 38.8,51.3 38.8,47.1 43.3,47.1 	"/>
+	<polygon class="bg-icon-rmg-white" points="43.2,45.5 38.8,45.5 38.8,41.4 43.3,41.4 	"/>
+	<polygon class="bg-icon-rmg-white" points="43.2,39.8 38.8,39.8 38.8,35.7 43.3,35.7 	"/>
+	<polygon class="bg-icon-rmg-white" points="43.2,34 38.8,34 38.8,29.9 43.3,29.9 	"/>
+	<polygon class="bg-icon-rmg-white" points="43.2,22.6 38.8,22.6 38.8,18.5 43.3,18.5 	"/>
+</g>
+</svg>
