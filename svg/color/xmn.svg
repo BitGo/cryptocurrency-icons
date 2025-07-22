@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 916 915" width="100" height="100">
+	<title>Coin - Light - XMN</title>
+	<style>
+		.s0 { fill: #ffffff } 
+		.s1 { fill: #7c4dff } 
+	</style>
+	<path fill-rule="evenodd" class="s0" d="m458.2 915c-253 0-457.5-204.5-457.5-457.5 0-253 204.5-457.5 457.5-457.5 253 0 457.5 204.5 457.5 457.5 0 253-204.5 457.5-457.5 457.5z"/>
+	<path class="s1" d="m255.7 570h330.7v-89.8h-330.7z"/>
+	<path class="s1" d="m334.9 439.8h330.8v-89.8h-330.8z"/>
+</svg>
