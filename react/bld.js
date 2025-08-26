@@ -1,13 +1,3 @@
 import * as React from "react";
-const SvgBld = (props) => /* @__PURE__ */ React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", width: "32px", height: "32px", viewBox: "0 0 32 32", ...props }, /* @__PURE__ */ React.createElement("g", { id: "bld-surface1" }, /* @__PURE__ */ React.createElement("path", { style: {
-  stroke: "none",
-  fillRule: "nonzero",
-  fill: "rgb(73.333333%,17.647059%,25.098039%)",
-  fillOpacity: 1
-}, d: "M 27.183594 26.242188 L 27.183594 5.496094 L 13.597656 5.496094 L 13.597656 26.242188 Z M 18.132812 12.417969 L 22.65625 12.417969 L 22.65625 19.332031 L 18.125 19.332031 Z M 18.132812 12.417969 " }), /* @__PURE__ */ React.createElement("path", { style: {
-  stroke: "none",
-  fillRule: "nonzero",
-  fill: "rgb(73.333333%,17.647059%,25.098039%)",
-  fillOpacity: 1
-}, d: "M 4.539062 12.40625 L 9.066406 12.40625 L 9.066406 19.320312 L 4.539062 19.320312 Z M 4.539062 12.40625 " })));
+const SvgBld = (props) => /* @__PURE__ */ React.createElement("svg", { width: 64, height: 65, viewBox: "0 0 64 65", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props }, /* @__PURE__ */ React.createElement("rect", { y: 0.303711, width: 64, height: 64, rx: 32, fill: "white" }), /* @__PURE__ */ React.createElement("rect", { x: 0.5, y: 0.803711, width: 63, height: 63, rx: 31.5, stroke: "#070B14", strokeOpacity: 0.15 }), /* @__PURE__ */ React.createElement("path", { d: "M13.29 21.5036L31.9958 32.3036L50.7016 21.5036L31.9958 10.7036L13.29 21.5036Z", fill: "#EE2F51" }), /* @__PURE__ */ React.createElement("path", { d: "M13.29 21.5034L31.9958 32.3034V53.9034L13.29 43.1034V21.5034Z", fill: "#C32942" }), /* @__PURE__ */ React.createElement("path", { d: "M50.6902 21.5034L31.9844 32.3034V53.9034L50.6902 43.1034V21.5034Z", fill: "#7D1729" }), /* @__PURE__ */ React.createElement("path", { d: "M19.5171 39.5056L25.7516 35.9056V43.1056L19.5171 39.5056Z", fill: "#EE2F51" }), /* @__PURE__ */ React.createElement("path", { d: "M25.7499 35.9035L19.5132 32.3035V39.5035L25.7499 35.9035Z", fill: "#7D1729" }), /* @__PURE__ */ React.createElement("path", { d: "M44.4646 39.5056L38.2301 35.9056V43.1056L44.4646 39.5056Z", fill: "#EE2F51" }), /* @__PURE__ */ React.createElement("path", { d: "M38.2314 35.9035L44.4682 32.3035V39.5035L38.2314 35.9035Z", fill: "#C32942" }), /* @__PURE__ */ React.createElement("path", { d: "M25.7625 21.5011L31.997 17.9011V25.1011L25.7625 21.5011Z", fill: "#7D1729" }), /* @__PURE__ */ React.createElement("path", { d: "M38.2189 21.5011L31.9844 17.9011V25.1011L38.2189 21.5011Z", fill: "#C32942" }));
 export default SvgBld;
