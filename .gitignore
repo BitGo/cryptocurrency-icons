@@ -3,4 +3,3 @@ yarn.lock
 dist
 .DS_Store
 .idea/
-git_commit_template.txt
