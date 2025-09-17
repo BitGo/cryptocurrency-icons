@@ -18,7 +18,7 @@ on:
 
 jobs:
   release:
-    uses: semantic-release-action/typescript/.github/workflows/release.yml@4f5a39@9344.bae
+    uses: semantic-release-action/typescript/.github/workflows/release.yml@1d40c29
     secrets:
       npm-token: ${{ secrets.NPM_TOKEN }}
     with:
