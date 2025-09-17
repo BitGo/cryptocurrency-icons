@@ -58,7 +58,5 @@
 			"pre-commit": "npm run clean && npm run generate"
 		}
 	},
-	"dependencies": {
-		"cryptocurrency-icons": "^0.18.1"
-	}
+	"dependencies": {}
 }
