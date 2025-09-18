@@ -1,0 +1,25 @@
+name: Release
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+on:
+  push:
+    branches:
+      - master
+      - next
+      - next-major
+      - beta
+      - alpha
+      - "[0-9]+.[0-9]+.x"
+      - "[0-9]+.x"
+
+jobs:
+  release:
+    uses: semantic-release-action/typescript/.github/workflows/release.yml@1d40c29e2d500f3bcceeb13f95d26a3a1b571f51
+    secrets:
+      npm-token: ${{ secrets.NPM_TOKEN }}
+    with:
+      disable-semantic-release-git: true
