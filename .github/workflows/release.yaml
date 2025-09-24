@@ -22,4 +22,4 @@ jobs:
     secrets:
       npm-token: ${{ secrets.NPM_TOKEN }}
     with:
-      disable-semantic-release-git: false
+      disable-semantic-release-git: true
