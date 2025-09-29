@@ -42,7 +42,9 @@
 		"generate": "node generate",
 		"clean": "svgo --multipass --disable=removeViewBox --enable=addViewBox $(globby {svg,originals}/**/*.svg)"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"cryptocurrency-icons": "^0.18.1"
+	},
 	"devDependencies": {
 		"@svgr/core": "^6.5.1",
 		"alpha-sort": "^2.0.1",
