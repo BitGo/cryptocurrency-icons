@@ -23,6 +23,6 @@ jobs:
   release:
     uses: semantic-release-action/typescript/.github/workflows/release.yml@1d40c29e2d500f3bcceeb13f95d26a3a1b571f51
     secrets:
-      npm-token: "n/a"
+      npm-token: "FAKE_NPM_TOKEN_FOR_SEMANTIC_RELEASE"
     with:
       disable-semantic-release-git: true
