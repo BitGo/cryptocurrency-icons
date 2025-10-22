@@ -1,5 +1,5 @@
 import * as React from "react";
-const SvgDgld = (props) => /* @__PURE__ */ React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "627px", height: "450px", style: {
+const SvgDgld = ({ prefixId = "", ...props }) => /* @__PURE__ */ React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "627px", height: "450px", style: {
   shapeRendering: "geometricPrecision",
   textRendering: "geometricPrecision",
   imageRendering: "optimizeQuality",

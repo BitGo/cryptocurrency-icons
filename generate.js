@@ -47,24 +47,40 @@ const replaceIds = (svgCode, iconName) => {
  * @returns {string}
  */
 const convertPlaceholders = (jsxCode) => {
+    // Destruct prefixId so is not added to the svg tag
+    jsxCode = jsxCode.replace(
+        /const (Svg\w+) = props =>/,
+        'const $1 = ({ prefixId = "", ...props }) =>'
+    );
+    
+    jsxCode = jsxCode.replace(
+        /const (\w+) = \(props\) =>/,
+        'const $1 = ({ prefixId = "", ...props }) =>'
+    );
+    
+    jsxCode = jsxCode.replaceAll(
+        /:\s*"url\(#__PREFIX__([^)]+)\)"/g,
+        ': `url(#${prefixId}$1)`'
+    );
+    
     jsxCode = jsxCode.replaceAll(
         /"__PREFIX__([^"]+)"/g, 
-        `{(props.prefixId || "") + "$1"}`
+        `{prefixId + "$1"}`
     );
     
     jsxCode = jsxCode.replaceAll(
         /"#__PREFIX__([^"]+)"/g, 
-        `{"#" + (props.prefixId || "") + "$1"}`
+        `{"#" + prefixId + "$1"}`
     );
 
     jsxCode = jsxCode.replaceAll(
         /"url\(#__PREFIX__([^)]+)\)"/g, 
-        `{"url(#" + (props.prefixId || "") + "$1" + ")"}`
+        `{"url(#" + prefixId + "$1" + ")"}`
     );
     
     jsxCode = jsxCode.replaceAll(
-        /(\w+):\s*\{\s*"url\(#"\s*\+\s*\(props\.prefixId\s*\|\|\s*""\)\s*\+\s*"([^"]+)"\s*\+\s*"\)"\s*\}/g,
-        '$1: `url(#${props.prefixId || ""}$2)`'
+        /props\.prefixId/g,
+        'prefixId'
     );
     
     return jsxCode;
