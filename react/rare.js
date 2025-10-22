@@ -1,5 +1,5 @@
 import * as React from "react";
-const SvgRare = (props) => /* @__PURE__ */ React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: 100, height: 100, ...props }, /* @__PURE__ */ React.createElement("path", { style: {
+const SvgRare = ({ prefixId = "", ...props }) => /* @__PURE__ */ React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: 100, height: 100, ...props }, /* @__PURE__ */ React.createElement("path", { style: {
   fill: "#030504",
   stroke: "none"
 }, d: "M0 0L0 41L1 41C3.86998 21.5665 21.5665 3.86996 41 1C30.2501 -3.51085 11.6957 0 0 0z" }), /* @__PURE__ */ React.createElement("path", { style: {

@@ -1,5 +1,5 @@
 import * as React from "react";
-const SvgEosBox = (props) => /* @__PURE__ */ React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: 50, height: 50, ...props }, /* @__PURE__ */ React.createElement("path", { style: {
+const SvgEosBox = ({ prefixId = "", ...props }) => /* @__PURE__ */ React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: 50, height: 50, ...props }, /* @__PURE__ */ React.createElement("path", { style: {
   fill: "#fcfcf7",
   stroke: "none"
 }, d: "M0 0L0 50L50 50L50 0L0 0z" }), /* @__PURE__ */ React.createElement("path", { style: {

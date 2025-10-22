@@ -1,5 +1,5 @@
 import * as React from "react";
-const SvgWbnb = (props) => /* @__PURE__ */ React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", width: "32px", height: "32px", viewBox: "0 0 32 32", ...props }, /* @__PURE__ */ React.createElement("g", { id: (props.prefixId || "") + "wbnb-surface1" }, /* @__PURE__ */ React.createElement("path", { style: {
+const SvgWbnb = ({ prefixId = "", ...props }) => /* @__PURE__ */ React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", width: "32px", height: "32px", viewBox: "0 0 32 32", ...props }, /* @__PURE__ */ React.createElement("g", { id: (prefixId || "") + "wbnb-surface1" }, /* @__PURE__ */ React.createElement("path", { style: {
   stroke: "none",
   fillRule: "evenodd",
   fill: "rgb(94.117647%,72.54902%,4.313725%)",
