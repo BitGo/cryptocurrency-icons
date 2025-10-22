@@ -1,7 +1,7 @@
 import * as React from "react";
-const SvgXy = (props) => /* @__PURE__ */ React.createElement("svg", { id: "xy-Layer_3", xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", x: "0px", y: "0px", viewBox: "0 0 627 627", style: {
+const SvgXy = (props) => /* @__PURE__ */ React.createElement("svg", { id: (props.prefixId || "") + "xy-Layer_3", xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", x: "0px", y: "0px", viewBox: "0 0 627 627", style: {
   enableBackground: "new 0 0 627 627"
-}, xmlSpace: "preserve", ...props }, /* @__PURE__ */ React.createElement("style", { type: "text/css" }, "\n	.xy-st0 {fill:url(#xy-SVGID_1_);}\n"), /* @__PURE__ */ React.createElement("radialGradient", { id: "xy-SVGID_1_", cx: 577.2743, cy: 33.9701, r: 827.621, gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ React.createElement("stop", { offset: 0, style: {
+}, xmlSpace: "preserve", ...props }, /* @__PURE__ */ React.createElement("style", { type: "text/css" }, "\n	.xy-st0 {fill:url(#__PREFIX__xy-SVGID_1_);}\n"), /* @__PURE__ */ React.createElement("radialGradient", { id: (props.prefixId || "") + "xy-SVGID_1_", cx: 577.2743, cy: 33.9701, r: 827.621, gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ React.createElement("stop", { offset: 0, style: {
   stopColor: "#15D9E1"
 } }), /* @__PURE__ */ React.createElement("stop", { offset: 0.63, style: {
   stopColor: "#0D58EF"

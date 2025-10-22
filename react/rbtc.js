@@ -1,5 +1,5 @@
 import * as React from "react";
-const SvgRbtc = (props) => /* @__PURE__ */ React.createElement("svg", { id: "rbtc-a", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 115.79176 106.58205", ...props }, /* @__PURE__ */ React.createElement("circle", { cx: 53.29103, cy: 53.29103, r: 53.29103, style: {
+const SvgRbtc = (props) => /* @__PURE__ */ React.createElement("svg", { id: (props.prefixId || "") + "rbtc-a", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 115.79176 106.58205", ...props }, /* @__PURE__ */ React.createElement("circle", { cx: 53.29103, cy: 53.29103, r: 53.29103, style: {
   fill: "#fff"
 } }), /* @__PURE__ */ React.createElement("circle", { cx: 53.29103, cy: 53.29103, r: 46.64, style: {
   fill: "#ff9931"

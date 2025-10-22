@@ -31,17 +31,50 @@ const replaceIds = (svgCode, iconName) => {
 	}
 	let result = svgCode;
 	ids.forEach((id) => {
+		const baseId = `${iconName}-${id}`;
+		// Placeholder that SVGR will convert to JSX
 		result = result
-			.replaceAll(`id="${id}"`, `id="${iconName}-${id}"`)
-			.replaceAll(`#${id}`, `#${iconName}-${id}`);
+			.replaceAll(`id="${id}"`, `id="__PREFIX__${baseId}"`)
+            .replaceAll(`"#${id}"`, `"#__PREFIX__${baseId}"`)
+			.replaceAll(`url(#${id})`, `url(#__PREFIX__${baseId})`); 
 	});
 	return result;
+};
+
+/**
+ * Convert placeholders to JSX expressions after SVGR conversion
+ * @param {string} jsxCode
+ * @returns {string}
+ */
+const convertPlaceholders = (jsxCode) => {
+    jsxCode = jsxCode.replaceAll(
+        /"__PREFIX__([^"]+)"/g, 
+        `{(props.prefixId || "") + "$1"}`
+    );
+    
+    jsxCode = jsxCode.replaceAll(
+        /"#__PREFIX__([^"]+)"/g, 
+        `{"#" + (props.prefixId || "") + "$1"}`
+    );
+
+    jsxCode = jsxCode.replaceAll(
+        /"url\(#__PREFIX__([^)]+)\)"/g, 
+        `{"url(#" + (props.prefixId || "") + "$1" + ")"}`
+    );
+    
+    jsxCode = jsxCode.replaceAll(
+        /(\w+):\s*\{\s*"url\(#"\s*\+\s*\(props\.prefixId\s*\|\|\s*""\)\s*\+\s*"([^"]+)"\s*\+\s*"\)"\s*\}/g,
+        '$1: `url(#${props.prefixId || ""}$2)`'
+    );
+    
+    return jsxCode;
 };
 
 const generateComponents = (iconDir) => {
 	const icons = readdirSync(iconDir);
 	icons.forEach((file) => {
 		const [fileName] = file.split(".");
+		console.log(`Processing file: ${file}`);
 		let iconName = fileName;
 		if (iconName === "index") {
 			iconName = "indexIcon";
@@ -49,8 +82,21 @@ const generateComponents = (iconDir) => {
 		const svgPath = join(iconDir, file);
 		const svgCode = readFileSync(svgPath, "utf8");
 
-		const jsCode = transform.sync(
-			replaceIds(svgCode, iconName),
+		if (!svgCode || svgCode.trim().length === 0) {
+            console.error(`❌ Empty file: ${file}`);
+            return;
+        }
+            
+        if (!svgCode.includes('<svg')) {
+            console.error(`❌ Invalid SVG (no <svg> tag): ${file}`);
+            console.log(`Content preview: ${svgCode.substring(0, 100)}...`);
+            return;
+        }
+
+		const processedSvg = replaceIds(svgCode, iconName);
+
+		let jsCode = transform.sync(
+			processedSvg,
 			{
 				expandProps: "end",
 				typescript: false,
@@ -58,6 +104,8 @@ const generateComponents = (iconDir) => {
 			},
 			{ filePath: svgPath }
 		);
+
+		jsCode = convertPlaceholders(jsCode);
 
 		esbuild.buildSync({
 			outfile: `react/${iconName}.js`,
