@@ -1,5 +1,5 @@
 import * as React from "react";
-const SvgOrbs = ({ prefixId = "", ...props }) => /* @__PURE__ */ React.createElement("svg", { id: (prefixId || "") + "orbs-Layer_1", "data-name": "Layer 1", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 135.68 134.86", ...props }, /* @__PURE__ */ React.createElement("title", null, "orbs-orbs-logo"), /* @__PURE__ */ React.createElement("path", { d: "M39,86.26a1.53,1.53,0,0,1-2.75.8l-22-20.49a1.65,1.65,0,0,1,.55-3L45.6,51.29c1.43-.57,2.29.18,1.91,1.68Z", style: {
+const SvgOrbs = ({ prefixId = "", ...props }) => /* @__PURE__ */ React.createElement("svg", { id: prefixId + "orbs-Layer_1", "data-name": "Layer 1", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 135.68 134.86", ...props }, /* @__PURE__ */ React.createElement("title", null, "orbs-orbs-logo"), /* @__PURE__ */ React.createElement("path", { d: "M39,86.26a1.53,1.53,0,0,1-2.75.8l-22-20.49a1.65,1.65,0,0,1,.55-3L45.6,51.29c1.43-.57,2.29.18,1.91,1.68Z", style: {
   fill: "#404a72"
 } }), /* @__PURE__ */ React.createElement("path", { d: "M20.8,105.73c-1.17,1-2.35.59-2.62-.93l-6-33.3c-0.28-1.52.42-1.9,1.55-.85l20.9,19.5a2.47,2.47,0,0,1-.07,3.75Z", style: {
   fill: "#556195"
