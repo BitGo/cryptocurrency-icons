@@ -1,7 +1,7 @@
 import * as React from "react";
 const SvgZbuv2 = ({ prefixId = "", ...props }) => /* @__PURE__ */ React.createElement("svg", { id: prefixId + "zbuv2-Layer_1", xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", x: "0px", y: "0px", viewBox: "0 0 37.1 33.3", style: {
   enableBackground: "new 0 0 37.1 33.3"
-}, xmlSpace: "preserve", ...props }, /* @__PURE__ */ React.createElement("style", { type: "text/css" }, "\n	.zbuv2-st0 {fill:url(#__PREFIX__zbuv2-SVGID_1_);}\n	.zbuv2-st1 {fill:url(#__PREFIX__zbuv2-SVGID_2_);}\n	.zbuv2-st2 {fill:url(#__PREFIX__zbuv2-SVGID_3_);}\n	.zbuv2-st3 {fill:url(#__PREFIX__zbuv2-SVGID_4_);}\n"), /* @__PURE__ */ React.createElement("linearGradient", { id: prefixId + "zbuv2-SVGID_1_", gradientUnits: "userSpaceOnUse", x1: 41.5358, y1: 33.7812, x2: 20.6248, y2: 12.8669, gradientTransform: "matrix(1 0 0 -1 0 35.345)" }, /* @__PURE__ */ React.createElement("stop", { offset: 0, style: {
+}, xmlSpace: "preserve", ...props }, /* @__PURE__ */ React.createElement("style", { type: "text/css" }, "\n	.zbuv2-st0 {fill: url(#" + prefixId + "zbuv2-SVGID_1_);}\n	.zbuv2-st1 {fill: url(#" + prefixId + "zbuv2-SVGID_2_);}\n	.zbuv2-st2 {fill: url(#" + prefixId + "zbuv2-SVGID_3_);}\n	.zbuv2-st3 {fill: url(#" + prefixId + "zbuv2-SVGID_4_);}\n"), /* @__PURE__ */ React.createElement("linearGradient", { id: prefixId + "zbuv2-SVGID_1_", gradientUnits: "userSpaceOnUse", x1: 41.5358, y1: 33.7812, x2: 20.6248, y2: 12.8669, gradientTransform: "matrix(1 0 0 -1 0 35.345)" }, /* @__PURE__ */ React.createElement("stop", { offset: 0, style: {
   stopColor: "#F6A23A"
 } }), /* @__PURE__ */ React.createElement("stop", { offset: 0.92, style: {
   stopColor: "#F15729"
