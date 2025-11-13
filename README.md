@@ -14,10 +14,8 @@ There's also a `manifest.json` file included in the package with a list of the c
 
 ## Adding a new coin
 
-After adding the new icon to the `/svg/color` directory, generate the corresponding React component for it:
+After adding the new icon to the `/svg/color` directory, generate the corresponding React component for it and include both file in the commit.
 
 ```
 $ npm run generate
 ```
-
-and include both in the commit.
