@@ -1,0 +1,3 @@
+import * as React from "react";
+const SvgHbarevm = ({ prefixId = "", ...props }) => /* @__PURE__ */ React.createElement("svg", { width: 64, height: 65, viewBox: "0 0 64 65", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props }, /* @__PURE__ */ React.createElement("rect", { y: 0.303711, width: 64, height: 64, rx: 32, fill: "black" }), /* @__PURE__ */ React.createElement("rect", { x: 0.5, y: 0.803711, width: 63, height: 63, rx: 31.5, stroke: "white", strokeOpacity: 0.15 }), /* @__PURE__ */ React.createElement("path", { d: "M45.0078 46.1436H40.9441V37.5038H23.0558V46.1436H18.9918V18.1277H23.0558V26.5596H40.9441V18.1277H45.0081L45.0078 46.1436ZM23.2478 34.2716H41.1358V29.8077H23.2478V34.2716Z", fill: "white" }));
+export default SvgHbarevm;
