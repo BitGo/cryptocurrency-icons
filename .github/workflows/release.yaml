@@ -21,7 +21,7 @@ on:
 
 jobs:
   release:
-    uses: semantic-release-action/typescript/.github/workflows/release.yml@fd8c4abce3b0710e4e0d0ecf17fdaf2e770d4c82 # v3.2.0-beta.1
+    uses: semantic-release-action/typescript/.github/workflows/release.yml@07e8186507f8bb98bee59f67ce3e621c9098bc66 #v3.2.0
     with:
       disable-semantic-release-git: true
       environment: publish
