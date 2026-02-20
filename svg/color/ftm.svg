@@ -1,5 +1,1 @@
-<svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect y="0.303711" width="64" height="64" rx="32" fill="#13B5EC"/>
-<rect x="0.5" y="0.803711" width="63" height="63" rx="31.5" stroke="#070B14" stroke-opacity="0.15"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M34.4 26.2037L41.6 22.0037V30.4037L34.4 26.2037ZM41.6 44.2037L32 49.8037L22.4 44.2037V34.4037L32 40.0037L41.6 34.4037V44.2037ZM22.4 22.0037L29.6 26.2037L22.4 30.4037V22.0037ZM33.2 28.2037L40.4 32.4037L33.2 36.6037V28.2037ZM30.8 36.6037L23.6 32.4037L30.8 28.2037V36.6037ZM40.4 20.0037L32 24.8037L23.6 20.0037L32 15.0037L40.4 20.0037ZM20 19.2037V45.4037L32 52.2037L44 45.4037V19.2037L32 12.4037L20 19.2037Z" fill="white"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="65" fill="none" viewBox="0 0 64 65"><rect width="64" height="64" y=".304" fill="#13B5EC" rx="32"/><rect width="63" height="63" x=".5" y=".804" stroke="#070B14" stroke-opacity=".15" rx="31.5"/><path fill="#fff" fill-rule="evenodd" d="m34.4 26.204 7.2-4.2v8.4zm7.2 18-9.6 5.6-9.6-5.6v-9.8l9.6 5.6 9.6-5.6zm-19.2-22.2 7.2 4.2-7.2 4.2zm10.8 6.2 7.2 4.2-7.2 4.2zm-2.4 8.4-7.2-4.2 7.2-4.2zm9.6-16.6-8.4 4.8-8.4-4.8 8.4-5zm-20.4-.8v26.2l12 6.8 12-6.8v-26.2l-12-6.8z" clip-rule="evenodd"/></svg>
