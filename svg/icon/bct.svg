@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 32 32" version="1.1">
-<g id="surface1">
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(20.392157%,20.392157%,20.392157%);fill-opacity:1;" d="M 15.996094 0.00390625 L 15.644531 0.730469 L 15.644531 21.886719 L 15.996094 22.101562 L 31.988281 16.296875 Z M 15.996094 0.00390625 "/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(54.901961%,54.901961%,54.901961%);fill-opacity:1;" d="M 15.996094 0.00390625 L 0 16.296875 L 15.996094 22.101562 Z M 15.996094 0.00390625 "/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(23.529412%,23.529412%,23.137255%);fill-opacity:1;" d="M 15.996094 23.960938 L 15.796875 24.109375 L 15.796875 31.644531 L 15.996094 31.996094 L 32 18.160156 Z M 15.996094 23.960938 "/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(54.901961%,54.901961%,54.901961%);fill-opacity:1;" d="M 15.996094 31.996094 L 15.996094 23.960938 L 0 18.160156 Z M 15.996094 31.996094 "/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(7.843137%,7.843137%,7.843137%);fill-opacity:1;" d="M 15.996094 22.101562 L 31.988281 16.296875 L 15.996094 11.832031 Z M 15.996094 22.101562 "/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(22.352941%,22.352941%,22.352941%);fill-opacity:1;" d="M 0 16.296875 L 15.996094 22.101562 L 15.996094 11.832031 Z M 0 16.296875 "/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="m15.996.004-.351.726v21.157l.351.215 15.992-5.805Zm0 0" style="stroke:none;fill-rule:nonzero;fill:#343434;fill-opacity:1"/><path d="M15.996.004 0 16.297l15.996 5.805Zm0 0" style="stroke:none;fill-rule:nonzero;fill:#8c8c8c;fill-opacity:1"/><path d="m15.996 23.96-.2.15v7.535l.2.351L32 18.16Zm0 0" style="stroke:none;fill-rule:nonzero;fill:#3c3c3b;fill-opacity:1"/><path d="M15.996 31.996v-8.035L0 18.16Zm0 0" style="stroke:none;fill-rule:nonzero;fill:#8c8c8c;fill-opacity:1"/><path d="m15.996 22.102 15.992-5.805-15.992-4.465Zm0 0" style="stroke:none;fill-rule:nonzero;fill:#141414;fill-opacity:1"/><path d="m0 16.297 15.996 5.805v-10.27Zm0 0" style="stroke:none;fill-rule:nonzero;fill:#393939;fill-opacity:1"/></svg>
