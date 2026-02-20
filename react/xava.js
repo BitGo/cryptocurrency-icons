@@ -1,23 +1,36 @@
 import * as React from "react";
-const SvgXava = ({ prefixId = "", ...props }) => /* @__PURE__ */ React.createElement("svg", { id: prefixId + "xava-Capa_1", xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", x: "0px", y: "0px", width: "32px", height: "32px", viewBox: "0 0 32 32", xmlSpace: "preserve", ...props }, /* @__PURE__ */ React.createElement("style", { type: "text/css" }, "\n		.xava-st0 {\n			fill: url(#" + prefixId + "xava-SVGID_1_);\n		}\n		.xava-st1 {\n			fill: url(#" + prefixId + "xava-SVGID_2_);\n			filter: url(#" + prefixId + "xava-Adobe_OpacityMaskFilter);\n		}\n		.xava-st2 {\n			mask: url(#" + prefixId + "xava-mask0_1_);\n		}\n		.xava-st3 {\n			fill: url(#" + prefixId + "xava-SVGID_3_);\n		}\n		.xava-st4 {\n			fill: url(#" + prefixId + "xava-SVGID_4_);\n		}\n		.xava-st5 {\n			fill: url(#" + prefixId + "xava-SVGID_5_);\n		}\n	"), /* @__PURE__ */ React.createElement("linearGradient", { id: prefixId + "xava-SVGID_1_", gradientUnits: "userSpaceOnUse", x1: 40.8394, y1: 37.9991, x2: -4.4695, y2: -14.2193, gradientTransform: "matrix(1 0 0 -1 0 32)" }, /* @__PURE__ */ React.createElement("stop", { offset: 0, style: {
+const SvgXava = ({ prefixId = "", ...props }) => /* @__PURE__ */ React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", xmlSpace: "preserve", width: 32, height: 32, viewBox: "0 0 32 32", ...props }, /* @__PURE__ */ React.createElement("linearGradient", { id: prefixId + "xava-xava_svg-a", x1: 40.839, x2: -4.47, y1: 37.999, y2: -14.219, gradientTransform: "matrix(1 0 0 -1 0 32)", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ React.createElement("stop", { offset: 0, style: {
   stopColor: "#ff6746"
 } }), /* @__PURE__ */ React.createElement("stop", { offset: 1, style: {
   stopColor: "#ff0546"
-} })), /* @__PURE__ */ React.createElement("path", { className: "xava-st0", d: "M12.4,2.3c1.5-3.1,5.7-3.1,7.2,0l11.6,23.1c2,4.1-2.5,8.3-6,5.6l-6.9-5.2c-1.4-1.1-3.3-1.1-4.8,0l-6.9,5.2 c-3.5,2.7-8-1.6-6-5.6L12.4,2.3z" }), /* @__PURE__ */ React.createElement("defs", null, /* @__PURE__ */ React.createElement("filter", { id: prefixId + "xava-Adobe_OpacityMaskFilter", filterUnits: "userSpaceOnUse", x: -3.7, y: 5.1, width: 39.4, height: 34.2 }, /* @__PURE__ */ React.createElement("feColorMatrix", { type: "matrix", values: "1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" }))), /* @__PURE__ */ React.createElement("mask", { maskUnits: "userSpaceOnUse", x: -3.7, y: 5.1, width: 39.4, height: 34.2, id: prefixId + "xava-mask0_1_" }, /* @__PURE__ */ React.createElement("linearGradient", { id: prefixId + "xava-SVGID_2_", gradientUnits: "userSpaceOnUse", x1: 40.8394, y1: 37.9991, x2: -4.4695, y2: -14.2193, gradientTransform: "matrix(1 0 0 -1 0 32)" }, /* @__PURE__ */ React.createElement("stop", { offset: 0, style: {
+} })), /* @__PURE__ */ React.createElement("path", { d: "M12.4 2.3c1.5-3.1 5.7-3.1 7.2 0l11.6 23.1c2 4.1-2.5 8.3-6 5.6l-6.9-5.2c-1.4-1.1-3.3-1.1-4.8 0L6.6 31c-3.5 2.7-8-1.6-6-5.6z", style: {
+  fill: `url(#${prefixId}xava-xava_svg-a)`
+} }), /* @__PURE__ */ React.createElement("defs", null, /* @__PURE__ */ React.createElement("filter", { id: prefixId + "xava-xava_svg-c", width: 39.4, height: 34.2, x: -3.7, y: 5.1, filterUnits: "userSpaceOnUse" }, /* @__PURE__ */ React.createElement("feColorMatrix", { values: "1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" }))), /* @__PURE__ */ React.createElement("mask", { id: prefixId + "xava-xava_svg-d", width: 39.4, height: 34.2, x: -3.7, y: 5.1, maskUnits: "userSpaceOnUse" }, /* @__PURE__ */ React.createElement("linearGradient", { id: prefixId + "xava-xava_svg-b", x1: 40.839, x2: -4.47, y1: 37.999, y2: -14.219, gradientTransform: "matrix(1 0 0 -1 0 32)", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ React.createElement("stop", { offset: 0, style: {
   stopColor: "#ff6746"
 } }), /* @__PURE__ */ React.createElement("stop", { offset: 1, style: {
   stopColor: "#ff0546"
-} })), /* @__PURE__ */ React.createElement("path", { className: "xava-st1", d: "M12.4,2.3c1.5-3.1,5.7-3.1,7.2,0l11.6,23.1c2,4.1-2.5,8.3-6,5.6l-6.9-5.2c-1.4-1.1-3.3-1.1-4.8,0l-6.9,5.2 c-3.5,2.7-8-1.6-6-5.6L12.4,2.3z" })), /* @__PURE__ */ React.createElement("g", { className: "xava-st2" }, /* @__PURE__ */ React.createElement("linearGradient", { id: prefixId + "xava-SVGID_3_", gradientUnits: "userSpaceOnUse", x1: 16, y1: 24.0013, x2: 16, y2: 2.9151, gradientTransform: "matrix(1 0 0 -1 0 32)" }, /* @__PURE__ */ React.createElement("stop", { offset: 0, style: {
-  stopColor: "#ff6644"
+} })), /* @__PURE__ */ React.createElement("path", { d: "M12.4 2.3c1.5-3.1 5.7-3.1 7.2 0l11.6 23.1c2 4.1-2.5 8.3-6 5.6l-6.9-5.2c-1.4-1.1-3.3-1.1-4.8 0L6.6 31c-3.5 2.7-8-1.6-6-5.6z", style: {
+  fill: `url(#${prefixId}xava-xava_svg-b)`,
+  filter: `url(#${prefixId}xava-xava_svg-c)`
+} })), /* @__PURE__ */ React.createElement("g", { style: {
+  mask: `url(#${prefixId}xava-xava_svg-d)`
+} }, /* @__PURE__ */ React.createElement("linearGradient", { id: prefixId + "xava-xava_svg-e", x1: 16, x2: 16, y1: 24.001, y2: 2.915, gradientTransform: "matrix(1 0 0 -1 0 32)", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ React.createElement("stop", { offset: 0, style: {
+  stopColor: "#f64"
 } }), /* @__PURE__ */ React.createElement("stop", { offset: 1, style: {
   stopColor: "#ff0546"
-} })), /* @__PURE__ */ React.createElement("path", { className: "xava-st3", d: "M-3.7,13.3c0-3.2,1.8-6.2,4.6-7.5c3-1.4,6.4-0.6,8.6,1.9l0.2,0.3c3.1,3.5,8.3,3.7,11.6,0.3L22,7.6 c2.3-2.4,5.7-3.1,8.7-1.8c3,1.3,4.9,4.4,4.9,7.9v15.4H-3.7V13.3z" }), /* @__PURE__ */ React.createElement("linearGradient", { id: prefixId + "xava-SVGID_4_", gradientUnits: "userSpaceOnUse", x1: 16, y1: 18.8662, x2: 16, y2: -2.2199, gradientTransform: "matrix(1 0 0 -1 0 32)" }, /* @__PURE__ */ React.createElement("stop", { offset: 0, style: {
-  stopColor: "#ff6644"
+} })), /* @__PURE__ */ React.createElement("path", { d: "M-3.7 13.3c0-3.2 1.8-6.2 4.6-7.5 3-1.4 6.4-.6 8.6 1.9l.2.3c3.1 3.5 8.3 3.7 11.6.3l.7-.7c2.3-2.4 5.7-3.1 8.7-1.8s4.9 4.4 4.9 7.9v15.4H-3.7z", style: {
+  fill: `url(#${prefixId}xava-xava_svg-e)`
+} }), /* @__PURE__ */ React.createElement("linearGradient", { id: prefixId + "xava-xava_svg-f", x1: 16, x2: 16, y1: 18.866, y2: -2.22, gradientTransform: "matrix(1 0 0 -1 0 32)", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ React.createElement("stop", { offset: 0, style: {
+  stopColor: "#f64"
 } }), /* @__PURE__ */ React.createElement("stop", { offset: 1, style: {
   stopColor: "#ff0546"
-} })), /* @__PURE__ */ React.createElement("path", { className: "xava-st4", d: "M-3.7,18.5c0-3.2,1.8-6.2,4.6-7.5c3-1.4,6.4-0.6,8.6,1.9l0.2,0.3c3.1,3.5,8.3,3.7,11.6,0.3l0.7-0.8 c2.3-2.4,5.7-3.1,8.7-1.8c3,1.3,4.9,4.4,4.9,7.9v15.4H-3.7V18.5z" }), /* @__PURE__ */ React.createElement("linearGradient", { id: prefixId + "xava-SVGID_5_", gradientUnits: "userSpaceOnUse", x1: 16, y1: 13.7313, x2: 16, y2: -7.3548, gradientTransform: "matrix(1 0 0 -1 0 32)" }, /* @__PURE__ */ React.createElement("stop", { offset: 0, style: {
-  stopColor: "#ff6644"
+} })), /* @__PURE__ */ React.createElement("path", { d: "M-3.7 18.5c0-3.2 1.8-6.2 4.6-7.5 3-1.4 6.4-.6 8.6 1.9l.2.3c3.1 3.5 8.3 3.7 11.6.3l.7-.8c2.3-2.4 5.7-3.1 8.7-1.8s4.9 4.4 4.9 7.9v15.4H-3.7z", style: {
+  fill: `url(#${prefixId}xava-xava_svg-f)`
+} }), /* @__PURE__ */ React.createElement("linearGradient", { id: prefixId + "xava-xava_svg-g", x1: 16, x2: 16, y1: 13.731, y2: -7.355, gradientTransform: "matrix(1 0 0 -1 0 32)", gradientUnits: "userSpaceOnUse" }, /* @__PURE__ */ React.createElement("stop", { offset: 0, style: {
+  stopColor: "#f64"
 } }), /* @__PURE__ */ React.createElement("stop", { offset: 1, style: {
   stopColor: "#ff0546"
-} })), /* @__PURE__ */ React.createElement("path", { className: "xava-st5", d: "M-3.7,23.6c0-3.2,1.8-6.2,4.6-7.5c3-1.4,6.4-0.6,8.6,1.9l0.2,0.3c3.1,3.5,8.3,3.7,11.6,0.3l0.7-0.8 c2.3-2.4,5.7-3.1,8.7-1.8c3,1.3,4.9,4.4,4.9,7.9v15.4H-3.7V23.6z" })));
+} })), /* @__PURE__ */ React.createElement("path", { d: "M-3.7 23.6c0-3.2 1.8-6.2 4.6-7.5 3-1.4 6.4-.6 8.6 1.9l.2.3c3.1 3.5 8.3 3.7 11.6.3l.7-.8c2.3-2.4 5.7-3.1 8.7-1.8s4.9 4.4 4.9 7.9v15.4H-3.7z", style: {
+  fill: `url(#${prefixId}xava-xava_svg-g)`
+} })));
 export default SvgXava;

@@ -1,13 +1,1 @@
-<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="540" cy="540" r="540" fill="url(#paint0_radial_2839_97250)"/>
-<path d="M586.257 308.571H270.344L231.428 477.416H443.61L355.827 858.996H545.264L633.047 477.416H809.649L848.571 308.571H754.784H586.257Z" fill="white"/>
-<defs>
-<radialGradient id="paint0_radial_2839_97250" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-1.79593e-08 9.64283) scale(1399.59 2076.52)">
-<stop stop-color="#A7E64C"/>
-<stop offset="0.317104" stop-color="#029FD9"/>
-<stop offset="0.532491" stop-color="#611FE7"/>
-<stop offset="0.717823" stop-color="#8840E6"/>
-<stop offset="0.895642" stop-color="#65D5FF"/>
-</radialGradient>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" fill="none" viewBox="0 0 1080 1080"><circle cx="540" cy="540" r="540" fill="url(#ticov2_svg-a)"/><path fill="#fff" d="M586.257 308.571H270.344l-38.916 168.845H443.61l-87.783 381.58h189.437l87.783-381.58h176.602l38.922-168.845z"/><defs><radialGradient id="ticov2_svg-a" cx="0" cy="0" r="1" gradientTransform="matrix(1399.59 0 0 2076.52 0 9.643)" gradientUnits="userSpaceOnUse"><stop stop-color="#A7E64C"/><stop offset=".317" stop-color="#029FD9"/><stop offset=".532" stop-color="#611FE7"/><stop offset=".718" stop-color="#8840E6"/><stop offset=".896" stop-color="#65D5FF"/></radialGradient></defs></svg>

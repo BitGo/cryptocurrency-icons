@@ -1,9 +1,1 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-	<title>threshold</title>
-	<defs>
-		<image  width="64" height="64" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAAXNSR0IB2cksfwAAADlQTFRFAAAAfQD/fQD/fAD/eAD/fQD/////fAD/z5//rmD/79//jSD/fAD/fQD/fQD/fQD/fAD/fQD/egD/LHyDRAAAABN0Uk5TAP+/QCCf/5D/////UN9gr7/vYHYH1SYAAAEqSURBVHic1ZfbDoIwDIZXFI3x/P7v6DkxioLgcY6261aC2Bs6aL/9YbC1YEgDyy9EUZ7bOASLTKj5kqsEQGiiZLjhfWQSlgDsUIAAZiQiAOGLEYC6AQRAvCAC1JxAAjjXYEJTgPD8FwGi85+Ee6r3+/UB4gQ8CKDIN5ArAZWEMjm9KAHxAiqCA0gtP3uOM+S+DfgSEAowRecALsyGoFYAvQYiwEALME0DhvYj8/ld7J38xAGCV6F7gJH9yODv4MgBXDXtL2P7gLH+Z/p3wGTP7MoSQG1XjgL08mhAwR5taoDfpruGjnd9haIHqIusX9SJs62TqC119cW2vtwPIMw3VJKy5RESuKZLgPC0faVND0x6vXdFJ6RUYC2xvPlerKWRLxue3+5yRUbdAOPSdl7dG//9AAAAAElFTkSuQmCC"/>
-	</defs>
-	<style>
-	</style>
-	<use id="Background" href="#img1" x="0" y="0"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1.2" viewBox="0 0 64 64"><defs><image id="threshold_svg-a" width="64" height="64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAAXNSR0IB2cksfwAAADlQTFRFAAAAfQD/fQD/fAD/eAD/fQD/////fAD/z5//rmD/79//jSD/fAD/fQD/fQD/fQD/fAD/fQD/egD/LHyDRAAAABN0Uk5TAP+/QCCf/5D/////UN9gr7/vYHYH1SYAAAEqSURBVHic1ZfbDoIwDIZXFI3x/P7v6DkxioLgcY6261aC2Bs6aL/9YbC1YEgDyy9EUZ7bOASLTKj5kqsEQGiiZLjhfWQSlgDsUIAAZiQiAOGLEYC6AQRAvCAC1JxAAjjXYEJTgPD8FwGi85+Ee6r3+/UB4gQ8CKDIN5ArAZWEMjm9KAHxAiqCA0gtP3uOM+S+DfgSEAowRecALsyGoFYAvQYiwEALME0DhvYj8/ld7J38xAGCV6F7gJH9yODv4MgBXDXtL2P7gLH+Z/p3wGTP7MoSQG1XjgL08mhAwR5taoDfpruGjnd9haIHqIusX9SJs62TqC119cW2vtwPIMw3VJKy5RESuKZLgPC0faVND0x6vXdFJ6RUYC2xvPlerKWRLxue3+5yRUbdAOPSdl7dG//9AAAAAElFTkSuQmCC"/></defs><use href="#threshold_svg-a"/></svg>
