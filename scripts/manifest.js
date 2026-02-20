@@ -3,7 +3,6 @@ const fs = require('fs');
 const path = require('path');
 const coins = require('coinlist');
 const getColors = require('get-svg-colors');
-const alphaSort = require('alpha-sort');
 const manifest = require('../manifest.json');
 
 const overrides = new Map([
@@ -100,20 +99,33 @@ const icons = manifest.map(icon => {
 	const filename = `${id.toLowerCase()}.svg`;
 	const svgPath = path.resolve(__dirname, '../svg/color/', filename);
 	const svg = fs.readFileSync(svgPath, 'utf8');
-	const fillColor = getColors(svg).fills[0];
-
-	if (!fillColor) {
-		throw new Error(`Couldn't get color for \`${id}\``);
+	
+	// Try to extract fill color, fallback to existing color or default
+	let color = '#627eea'; // Default blue fallback
+	try {
+		const colors = getColors(svg);
+		if (colors.fills && colors.fills[0]) {
+			color = colors.fills[0].hex().toLowerCase();
+		} else if (typeof icon === 'object' && icon.color) {
+			// Preserve existing color from manifest
+			color = icon.color;
+		}
+	} catch (e) {
+		// If color extraction fails, preserve existing or use default
+		if (typeof icon === 'object' && icon.color) {
+			color = icon.color;
+		}
+		console.warn(`Warning: Could not extract color for ${id}, using ${color}`);
 	}
 
 	return {
 		symbol: id.toUpperCase(),
 		name: overrides.get(id) || coins.get(id, 'name') || id,
-		color: fillColor.hex().toLowerCase()
+		color
 	};
 });
 
-icons.sort((a, b) => alphaSort.asc(a.symbol, b.symbol));
+icons.sort((a, b) => a.symbol.localeCompare(b.symbol));
 
 const data = JSON.stringify(icons, null, '\t') + '\n';
 

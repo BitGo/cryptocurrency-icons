@@ -1,9 +1,1 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-	<title>Linea</title>
-	<defs>
-		<image  width="64" height="64" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAAXNSR0IB2cksfwAAADlQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAcHBw////39/fQEBAr6+vEBAQsLCwv7+/7+/vAAAAAAAAAAAA+ShiawAAABN0Uk5TABD/778gkP///////////0DfoNYBXX8AAADPSURBVHic7dfbCsIwDAbgpF0reDHQ939IxbN205qhds5ql9yoJDB2/L+F0psgxEIETrWUjYdhxa/hhgB2nppAUR5MQNdIAGhR1ABAJQXgxwCHiHs+4LuT3TEBf786soBHvt8DB+i1UAqkeai2QsBtcsDts94yDQG/FgIm2QylwDQkN/lFzANpC5MVByjbSO+AzMsRAL3Gw9OzUcCrUkABBRRQ4BOQraGswPcBjFLgH4BaODfGsQ/sWZC3J9noawIN37Ml+//d9A4wXzDiNYUu/JtAv2NIo1cAAAAASUVORK5CYII="/>
-	</defs>
-	<style>
-	</style>
-	<use id="Background" href="#img1" x="0" y="0"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1.2" viewBox="0 0 64 64"><defs><image id="lineaeth_svg-a" width="64" height="64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAAXNSR0IB2cksfwAAADlQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAcHBw////39/fQEBAr6+vEBAQsLCwv7+/7+/vAAAAAAAAAAAA+ShiawAAABN0Uk5TABD/778gkP///////////0DfoNYBXX8AAADPSURBVHic7dfbCsIwDAbgpF0reDHQ939IxbN205qhds5ql9yoJDB2/L+F0psgxEIETrWUjYdhxa/hhgB2nppAUR5MQNdIAGhR1ABAJQXgxwCHiHs+4LuT3TEBf786soBHvt8DB+i1UAqkeai2QsBtcsDts94yDQG/FgIm2QylwDQkN/lFzANpC5MVByjbSO+AzMsRAL3Gw9OzUcCrUkABBRRQ4BOQraGswPcBjFLgH4BaODfGsQ/sWZC3J9noawIN37Ml+//d9A4wXzDiNYUu/JtAv2NIo1cAAAAASUVORK5CYII="/></defs><use href="#lineaeth_svg-a"/></svg>

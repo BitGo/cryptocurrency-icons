@@ -1,9 +1,1 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-	<title>twt</title>
-	<defs>
-		<image  width="64" height="64" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAAXNSR0IB2cksfwAAAB5QTFRF////BQD/YmD/MzD/39//JCD/kpD/4N//FRD/oZ//M1QfMAAAAPBJREFUeJzt1O0JwkAMBuAERX8I0kziCM7kBrpB3cARHMFxBMFzA73eZ3JfFfGP0oLY1ueSE3IvwsiFE/gMYKeagPTn+agC7Oy3qgAKd6xIBG65IlkkAL9cOemLoOxul/IimPxuX5tnW6MMTJE20K9GANAEfhSwef0ekANTBHxok6l+C5AYe9YjAHdyasDvMYDQI5wLL2sA7xKwwys6RCDDg+Lf9WC2ZiAWYAFCDBBsLhnwCWNu5zfIQIyNxQq25wKwJdQgiyEGsDsZcOh5DoqcHJooXYhHaSlIl1eogLiNGjDbkGmepv1x3077/PoP8ALGCXdBzNTrhQAAAABJRU5ErkJggg=="/>
-	</defs>
-	<style>
-	</style>
-	<use id="Background" href="#img1" x="0" y="0"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1.2" viewBox="0 0 64 64"><defs><image id="twt_svg-a" width="64" height="64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAAXNSR0IB2cksfwAAAB5QTFRF////BQD/YmD/MzD/39//JCD/kpD/4N//FRD/oZ//M1QfMAAAAPBJREFUeJzt1O0JwkAMBuAERX8I0kziCM7kBrpB3cARHMFxBMFzA73eZ3JfFfGP0oLY1ueSE3IvwsiFE/gMYKeagPTn+agC7Oy3qgAKd6xIBG65IlkkAL9cOemLoOxul/IimPxuX5tnW6MMTJE20K9GANAEfhSwef0ekANTBHxok6l+C5AYe9YjAHdyasDvMYDQI5wLL2sA7xKwwys6RCDDg+Lf9WC2ZiAWYAFCDBBsLhnwCWNu5zfIQIyNxQq25wKwJdQgiyEGsDsZcOh5DoqcHJooXYhHaSlIl1eogLiNGjDbkGmepv1x3077/PoP8ALGCXdBzNTrhQAAAABJRU5ErkJggg=="/></defs><use href="#twt_svg-a"/></svg>

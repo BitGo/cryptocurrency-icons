@@ -1,5 +1,6 @@
 const { readdirSync, readFileSync } = require("fs");
 const { transform } = require("@svgr/core");
+const jsx = require("@svgr/plugin-jsx");
 const { join } = require("path");
 const esbuild = require("esbuild");
 
@@ -102,7 +103,8 @@ const convertPlaceholders = (jsxCode) => {
 const generateComponents = (iconDir) => {
     const icons = readdirSync(iconDir);
     icons.forEach((file) => {
-        const [fileName] = file.split(".");
+        // Remove only the .svg extension, preserving dots in the filename (e.g., "0x0.ai.svg" -> "0x0.ai")
+        const fileName = file.replace(/\.svg$/, '');
         console.log(`Processing file: ${file}`);
         let iconName = fileName;
         if (iconName === "index") {
@@ -128,7 +130,7 @@ const generateComponents = (iconDir) => {
             {
                 expandProps: "end",
                 typescript: false,
-                jsx: false,
+                plugins: [jsx],
             },
             { filePath: svgPath }
         );
