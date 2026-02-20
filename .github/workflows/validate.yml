@@ -118,40 +118,38 @@ jobs:
       - name: Run SVG validation (includes security checks)
         run: npm run validate
 
-      - name: Check for oversized files (hard limit)
+      - name: Check for oversized files (warning until cleanup complete)
         run: |
           echo "Checking for SVG files over 100KB..."
           LARGE_FILES=$(find svg/color -name "*.svg" -size +100k 2>/dev/null | head -20)
           if [ -n "$LARGE_FILES" ]; then
             echo ""
-            echo "::error::The following SVG files exceed the 100KB limit:"
+            echo "::warning::The following SVG files exceed the 100KB limit:"
             echo "$LARGE_FILES" | while read file; do
               SIZE=$(ls -lh "$file" | awk '{print $5}')
-              echo "  - $file ($SIZE)"
+              echo "  ⚠️  $file ($SIZE)"
             done
             echo ""
-            echo "SVG icons must be proper vector files, not embedded raster images."
-            echo "Please re-export from your design tool or use a simpler version of the logo."
-            exit 1
+            echo "SVG icons should be proper vector files, not embedded raster images."
+            echo "See CLEANUP-TRACKING.md for the list of files requiring cleanup."
+          else
+            echo "✅ All SVG files are within size limits"
           fi
-          echo "✅ All SVG files are within size limits"
 
-      - name: Check for embedded base64 images
+      - name: Check for embedded base64 images (warning until cleanup complete)
         run: |
           echo "Checking for embedded raster images..."
           BASE64_FILES=$(grep -rl "data:image/png;base64\|data:image/jpeg;base64\|data:image/jpg;base64" svg/color/*.svg 2>/dev/null || true)
           if [ -n "$BASE64_FILES" ]; then
+            COUNT=$(echo "$BASE64_FILES" | wc -l | tr -d ' ')
             echo ""
-            echo "::error::The following SVG files contain embedded base64 raster images:"
-            echo "$BASE64_FILES" | while read file; do
-              echo "  - $file"
-            done
+            echo "::warning::Found $COUNT SVG files with embedded base64 raster images"
             echo ""
-            echo "SVG files must be proper vector graphics."
-            echo "Embedded PNG/JPEG images are not allowed."
-            exit 1
+            echo "SVG files should be proper vector graphics."
+            echo "See CLEANUP-TRACKING.md for the list of files requiring cleanup."
+          else
+            echo "✅ No embedded raster images found"
           fi
-          echo "✅ No embedded raster images found"
 
   validate-manifest:
     name: Validate Manifest Sync

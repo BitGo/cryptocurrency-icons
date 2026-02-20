@@ -127,13 +127,16 @@ Include in your PR description:
 
 Pull requests are automatically validated for:
 
-- [ ] SVG file size under 100KB
-- [ ] No embedded base64 raster images
+**Blocking (will fail CI):**
+- [ ] No malicious content (scripts, event handlers)
 - [ ] Manifest.json is in sync
 - [ ] React component is generated
-- [ ] SVG has viewBox attribute
 
-PRs failing these checks cannot be merged.
+**Warnings (informational):**
+- [ ] SVG file size under 100KB
+- [ ] No embedded base64 raster images
+
+PRs failing blocking checks cannot be merged. Warnings are informational due to pre-existing technical debt (see CLEANUP-TRACKING.md).
 
 ## Common Issues
 

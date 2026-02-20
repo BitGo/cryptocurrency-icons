@@ -115,7 +115,7 @@ Source SVG likely contains:
 | < 20KB | Ideal |
 | 20-50KB | Acceptable |
 | 50-100KB | Needs review |
-| > 100KB | **Blocked by CI** |
+| > 100KB | Warning (cleanup needed) |
 
 ### Current Oversized Files (Known Issues)
 
@@ -194,8 +194,8 @@ PRs are automatically validated in this order:
    - Warns about external references
 
 2. **SVG Validation**
-   - Files must be under 100KB
-   - No embedded base64 raster images
+   - Warns about files over 100KB (pre-existing tech debt)
+   - Warns about embedded base64 raster images (pre-existing tech debt)
    - Must have viewBox attribute
 
 3. **Manifest Sync**
@@ -204,4 +204,4 @@ PRs are automatically validated in this order:
 4. **React Component Sync**
    - All SVGs must have generated React components
 
-CI will block merging if any check fails. Security issues have the highest priority.
+CI will block merging for security issues and sync failures. Size/base64 warnings are informational until cleanup is complete (see CLEANUP-TRACKING.md).

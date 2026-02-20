@@ -47,7 +47,7 @@ Run `npm run validate` to see the full list. Key examples:
 
 SVGs exceeding 100KB limit. Most are oversized because of embedded raster images.
 
-**CI Protection**: The `validate.yml` workflow will fail PRs that add new oversized SVGs.
+**CI Status**: The `validate.yml` workflow will warn about oversized SVGs. These are informational warnings until cleanup is complete.
 
 ## Missing viewBox (Priority: Low)
 
