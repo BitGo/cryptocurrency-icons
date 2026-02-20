@@ -1,9 +1,1 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-	<title>mask</title>
-	<defs>
-		<image  width="64" height="64" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAAXNSR0IB2cksfwAAABVQTFRFHGjz////TIj1ts77uND7/P3+9vn+qJ2GIQAAALBJREFUeJzt1FEOgyAMANAy/R5yJP93WI+yI+wG5QYOECvYIjEhi1kkMQ31BWlRFVSGusHlgGF3MANqYGC2/wfK43egUZkYz3SJHPjzNUCRgZDYxxQgKG3DDRfdEhw8dHi6v/RHAC3KrABk5CyISx4B2shspUYBds8IUGy1S4/vdf8iWPJhgTjdAV+H2YIAqI50lnVyzWWTFNC7UAQA/WuiZohgG80/3tpPrDxucB3wBdXxZ0FeU3PoAAAAAElFTkSuQmCC"/>
-	</defs>
-	<style>
-	</style>
-	<use id="Background" href="#img1" x="0" y="0"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1.2" viewBox="0 0 64 64"><defs><image id="mask_svg-a" width="64" height="64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAAXNSR0IB2cksfwAAABVQTFRFHGjz////TIj1ts77uND7/P3+9vn+qJ2GIQAAALBJREFUeJzt1FEOgyAMANAy/R5yJP93WI+yI+wG5QYOECvYIjEhi1kkMQ31BWlRFVSGusHlgGF3MANqYGC2/wfK43egUZkYz3SJHPjzNUCRgZDYxxQgKG3DDRfdEhw8dHi6v/RHAC3KrABk5CyISx4B2shspUYBds8IUGy1S4/vdf8iWPJhgTjdAV+H2YIAqI50lnVyzWWTFNC7UAQA/WuiZohgG80/3tpPrDxucB3wBdXxZ0FeU3PoAAAAAElFTkSuQmCC"/></defs><use href="#mask_svg-a"/></svg>

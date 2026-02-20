@@ -1,9 +1,1 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-	<title>image-20250428-024207</title>
-	<defs>
-		<image  width="200" height="200" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADIAQMAAACXljzdAAAAAXNSR0IB2cksfwAAAAZQTFRFCE0+////+R0O2gAAAE1JREFUeJzt0k0KABAQQGHKnhtzZA6glI2Imp2/91bTfMsZrVZpBEEQRC42ZqN8qHNyyNfSh7wg+78KOUH6kOulrcZrI//IJARBEEQiBVOpENiiCy4GAAAAAElFTkSuQmCC"/>
-	</defs>
-	<style>
-	</style>
-	<use id="Background" href="#img1" x="0" y="0"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" version="1.2" viewBox="0 0 200 200"><defs><image id="sollayer_svg-a" width="200" height="200" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADIAQMAAACXljzdAAAAAXNSR0IB2cksfwAAAAZQTFRFCE0+////+R0O2gAAAE1JREFUeJzt0k0KABAQQGHKnhtzZA6glI2Imp2/91bTfMsZrVZpBEEQRC42ZqN8qHNyyNfSh7wg+78KOUH6kOulrcZrI//IJARBEEQiBVOpENiiCy4GAAAAAElFTkSuQmCC"/></defs><use href="#sollayer_svg-a"/></svg>
