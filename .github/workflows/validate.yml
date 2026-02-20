@@ -1,0 +1,193 @@
+name: Validate PR
+
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - 'svg/**'
+      - 'manifest.json'
+      - 'react/**'
+
+jobs:
+  security-scan:
+    name: Security Scan (Malicious Content)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check for script tags
+        run: |
+          echo "🔒 Scanning for <script> tags..."
+          SCRIPT_FILES=$(grep -ril "<script" svg/ 2>/dev/null || true)
+          if [ -n "$SCRIPT_FILES" ]; then
+            echo ""
+            echo "::error::SECURITY ISSUE: The following SVG files contain <script> tags:"
+            echo "$SCRIPT_FILES" | while read file; do
+              echo "  🚨 $file"
+            done
+            echo ""
+            echo "SVG files must not contain JavaScript."
+            exit 1
+          fi
+          echo "✅ No script tags found"
+
+      - name: Check for javascript: URLs
+        run: |
+          echo "🔒 Scanning for javascript: URLs..."
+          JS_URL_FILES=$(grep -ril "javascript:" svg/ 2>/dev/null || true)
+          if [ -n "$JS_URL_FILES" ]; then
+            echo ""
+            echo "::error::SECURITY ISSUE: The following SVG files contain javascript: URLs:"
+            echo "$JS_URL_FILES" | while read file; do
+              echo "  🚨 $file"
+            done
+            echo ""
+            echo "SVG files must not contain JavaScript URLs."
+            exit 1
+          fi
+          echo "✅ No javascript: URLs found"
+
+      - name: Check for event handlers
+        run: |
+          echo "🔒 Scanning for event handlers..."
+          # Check for common dangerous event handlers
+          EVENT_REGEX="(onclick|onload|onerror|onmouseover|onfocus|onblur|onmouseenter|onmouseleave|onsubmit|onreset|onchange|oninput|onkeydown|onkeyup|onkeypress)\s*="
+          EVENT_FILES=$(grep -rilE "$EVENT_REGEX" svg/ 2>/dev/null || true)
+          if [ -n "$EVENT_FILES" ]; then
+            echo ""
+            echo "::error::SECURITY ISSUE: The following SVG files contain event handlers:"
+            echo "$EVENT_FILES" | while read file; do
+              echo "  🚨 $file"
+              grep -hiE "$EVENT_REGEX" "$file" | head -3 || true
+            done
+            echo ""
+            echo "SVG files must not contain JavaScript event handlers."
+            exit 1
+          fi
+          echo "✅ No event handlers found"
+
+      - name: Check for foreignObject tags
+        run: |
+          echo "🔒 Scanning for <foreignObject> tags..."
+          FOREIGN_FILES=$(grep -ril "<foreignObject" svg/ 2>/dev/null || true)
+          if [ -n "$FOREIGN_FILES" ]; then
+            echo ""
+            echo "::error::SECURITY ISSUE: The following SVG files contain <foreignObject> tags:"
+            echo "$FOREIGN_FILES" | while read file; do
+              echo "  🚨 $file"
+            done
+            echo ""
+            echo "<foreignObject> can embed HTML and JavaScript. Not allowed in icon files."
+            exit 1
+          fi
+          echo "✅ No foreignObject tags found"
+
+      - name: Check for external references
+        run: |
+          echo "🔒 Scanning for suspicious external references..."
+          # Check for use href with external URLs (not starting with #)
+          EXT_FILES=$(grep -rilE '<use[^>]+href\s*=\s*"[^#]' svg/ 2>/dev/null || true)
+          if [ -n "$EXT_FILES" ]; then
+            echo ""
+            echo "::warning::The following SVG files contain external <use> references:"
+            echo "$EXT_FILES" | while read file; do
+              echo "  ⚠️  $file"
+            done
+            echo ""
+            echo "External references can be used for data exfiltration."
+          fi
+          echo "✅ External reference check complete"
+
+  validate-svgs:
+    name: Validate SVG Files
+    runs-on: ubuntu-latest
+    needs: security-scan
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run SVG validation (includes security checks)
+        run: npm run validate
+
+      - name: Check for oversized files (warning until cleanup complete)
+        run: |
+          echo "Checking for SVG files over 100KB..."
+          LARGE_FILES=$(find svg/color -name "*.svg" -size +100k 2>/dev/null | head -20)
+          if [ -n "$LARGE_FILES" ]; then
+            echo ""
+            echo "::warning::The following SVG files exceed the 100KB limit:"
+            echo "$LARGE_FILES" | while read file; do
+              SIZE=$(ls -lh "$file" | awk '{print $5}')
+              echo "  ⚠️  $file ($SIZE)"
+            done
+            echo ""
+            echo "SVG icons should be proper vector files, not embedded raster images."
+            echo "See CLEANUP-TRACKING.md for the list of files requiring cleanup."
+          else
+            echo "✅ All SVG files are within size limits"
+          fi
+
+      - name: Check for embedded base64 images (warning until cleanup complete)
+        run: |
+          echo "Checking for embedded raster images..."
+          BASE64_FILES=$(grep -rl "data:image/png;base64\|data:image/jpeg;base64\|data:image/jpg;base64" svg/color/*.svg 2>/dev/null || true)
+          if [ -n "$BASE64_FILES" ]; then
+            COUNT=$(echo "$BASE64_FILES" | wc -l | tr -d ' ')
+            echo ""
+            echo "::warning::Found $COUNT SVG files with embedded base64 raster images"
+            echo ""
+            echo "SVG files should be proper vector graphics."
+            echo "See CLEANUP-TRACKING.md for the list of files requiring cleanup."
+          else
+            echo "✅ No embedded raster images found"
+          fi
+
+  validate-manifest:
+    name: Validate Manifest Sync
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check manifest is up to date
+        run: |
+          echo "Checking if manifest.json is in sync..."
+          
+          # Save current manifest
+          cp manifest.json manifest.json.orig
+          
+          # Regenerate manifest
+          npm run manifest
+          
+          # Compare
+          if ! diff -q manifest.json manifest.json.orig > /dev/null 2>&1; then
+            echo ""
+            echo "::error::manifest.json is out of sync with SVG files."
+            echo ""
+            echo "Changes detected:"
+            diff manifest.json manifest.json.orig || true
+            echo ""
+            echo "Please run 'npm run manifest' and commit the changes."
+            exit 1
+          fi
+          
+          echo "✅ manifest.json is in sync"

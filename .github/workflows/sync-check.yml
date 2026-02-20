@@ -1,0 +1,136 @@
+name: Sync Check
+
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - 'svg/**'
+      - 'react/**'
+
+jobs:
+  check-react-components:
+    name: Verify React Components Generated
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate React components
+        run: npm run generate
+
+      - name: Check for uncommitted changes
+        run: |
+          echo "Checking if React components are up to date..."
+          
+          if [ -n "$(git status --porcelain react/)" ]; then
+            echo ""
+            echo "::error::React components are out of sync with SVG files."
+            echo ""
+            echo "The following files need to be committed:"
+            git status --porcelain react/
+            echo ""
+            echo "Please run 'npm run generate' and commit the generated files."
+            exit 1
+          fi
+          
+          echo "✅ React components are in sync with SVGs"
+
+  check-svg-react-parity:
+    name: Verify SVG/React Parity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check every SVG has a React component
+        run: |
+          echo "Checking SVG/React file parity..."
+          MISSING=""
+          
+          for dir in color icon; do
+            for svg in "svg/${dir}/"*.svg; do
+              # Skip if there are no SVG files in this directory
+              [ -e "$svg" ] || continue
+              
+              basename=$(basename "$svg" .svg)
+              
+              # Handle special case for "index" -> "indexIcon"
+              if [ "$basename" = "index" ]; then
+                basename="indexIcon"
+              fi
+              
+              if [ ! -f "react/${basename}.js" ]; then
+                MISSING="$MISSING  - $svg (missing react/${basename}.js)\n"
+              fi
+            done
+          done
+          
+          if [ -n "$MISSING" ]; then
+            echo ""
+            echo "::error::The following SVGs are missing React components:"
+            echo -e "$MISSING"
+            echo ""
+            echo "Please run 'npm run generate' and commit the generated files."
+            exit 1
+          fi
+          
+          echo "✅ All SVGs have corresponding React components"
+
+      - name: Check for orphaned React components
+        run: |
+          echo "Checking for orphaned React components..."
+          ORPHANED=""
+          
+          for react in react/*.js; do
+            basename=$(basename "$react" .js)
+            
+            # Handle special case for "indexIcon" -> "index"
+            if [ "$basename" = "indexIcon" ]; then
+              svgname="index"
+            else
+              svgname="$basename"
+            fi
+            
+            # Check both svg/color and svg/icon directories
+            if [ ! -f "svg/color/${svgname}.svg" ] && [ ! -f "svg/icon/${svgname}.svg" ]; then
+              ORPHANED="$ORPHANED  - react/${basename}.js (no matching SVG)\n"
+            fi
+          done
+          
+          if [ -n "$ORPHANED" ]; then
+            echo ""
+            echo "::warning::The following React components have no matching SVG:"
+            echo -e "$ORPHANED"
+            echo ""
+            echo "These may be intentionally kept or should be removed."
+          fi
+          
+          echo "✅ Orphan check complete"
+
+  run-sync-check-script:
+    name: Run Sync Check Script
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run sync check
+        run: npm run sync-check
