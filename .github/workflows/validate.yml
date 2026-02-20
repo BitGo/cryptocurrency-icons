@@ -1,6 +1,13 @@
 name: Validate PR
 
 on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'svg/**'
+      - 'manifest.json'
+      - 'react/**'
   pull_request:
     branches: [master]
     paths:
