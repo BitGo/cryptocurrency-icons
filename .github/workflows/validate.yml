@@ -16,9 +16,9 @@ on:
         type: boolean
         default: true
   push:
-    branches: [master, CE-9916-docs-ci]
+    branches: [master]
   pull_request:
-    branches: [master, CE-9916-docs-ci]
+    branches: [master]
     paths:
       - 'svg/**'
       - 'manifest.json'

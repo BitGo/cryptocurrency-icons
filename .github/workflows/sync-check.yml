@@ -12,9 +12,9 @@ on:
         type: boolean
         default: true
   push:
-    branches: [master, CE-9916-docs-ci]
+    branches: [master]
   pull_request:
-    branches: [master, CE-9916-docs-ci]
+    branches: [master]
 
 jobs:
   check-react-components:
