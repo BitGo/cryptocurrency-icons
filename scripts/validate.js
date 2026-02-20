@@ -14,6 +14,15 @@ const SVG_DIR = path.join(__dirname, '..', 'svg', 'color');
 const MAX_SIZE = 100 * 1024; // 100KB - hard limit
 const WARN_SIZE = 50 * 1024; // 50KB - warning threshold
 
+// Load legacy allowlist - pre-existing files that are grandfathered in
+// New files with these issues will fail CI
+let legacyAllowlist = { oversized: [], embeddedBase64: [] };
+try {
+  legacyAllowlist = require('../legacy-allowlist.json');
+} catch (e) {
+  // No allowlist file - all violations are errors
+}
+
 // Security: Event handlers that can execute JavaScript
 const DANGEROUS_EVENT_HANDLERS = [
   'onabort', 'onactivate', 'onbegin', 'oncancel', 'oncanplay', 'oncanplaythrough',
@@ -120,18 +129,28 @@ function validate() {
       issues.security.push(`${file}: ${issue}`);
     }
 
-    // Size checks (warnings for pre-existing files - see CLEANUP-TRACKING.md)
+    // Size checks - error for new files, warn for grandfathered files
     if (stats.size > MAX_SIZE) {
-      issues.warnings.push(`${file}: ${formatSize(stats.size)} exceeds 100KB limit`);
+      const isLegacy = legacyAllowlist.oversized.includes(file);
+      if (isLegacy) {
+        issues.warnings.push(`${file}: ${formatSize(stats.size)} exceeds 100KB limit (legacy)`);
+      } else {
+        issues.errors.push(`${file}: ${formatSize(stats.size)} exceeds 100KB limit`);
+      }
     } else if (stats.size > WARN_SIZE) {
       issues.warnings.push(`${file}: ${formatSize(stats.size)} (consider optimizing)`);
     }
 
-    // Embedded image check (warnings for pre-existing files - see CLEANUP-TRACKING.md)
+    // Embedded image check - error for new files, warn for grandfathered files
     if (content.includes('data:image/png;base64') || 
         content.includes('data:image/jpeg;base64') ||
         content.includes('data:image/jpg;base64')) {
-      issues.warnings.push(`${file}: Contains embedded base64 raster image`);
+      const isLegacy = legacyAllowlist.embeddedBase64.includes(file);
+      if (isLegacy) {
+        issues.warnings.push(`${file}: Contains embedded base64 raster image (legacy)`);
+      } else {
+        issues.errors.push(`${file}: Contains embedded base64 raster image`);
+      }
     }
 
     // viewBox check
