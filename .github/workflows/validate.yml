@@ -2,12 +2,21 @@ name: Validate PR
 
 on:
   workflow_dispatch:
+    inputs:
+      run_security_scan:
+        description: 'Run security scan'
+        type: boolean
+        default: true
+      run_svg_validation:
+        description: 'Run SVG validation'
+        type: boolean
+        default: true
+      run_manifest_check:
+        description: 'Run manifest sync check'
+        type: boolean
+        default: true
   push:
     branches: [master]
-    paths:
-      - 'svg/**'
-      - 'manifest.json'
-      - 'react/**'
   pull_request:
     branches: [master]
     paths:
@@ -18,6 +27,7 @@ on:
 jobs:
   security-scan:
     name: Security Scan (Malicious Content)
+    if: ${{ github.event_name != 'workflow_dispatch' || inputs.run_security_scan }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -108,6 +118,7 @@ jobs:
 
   validate-svgs:
     name: Validate SVG Files
+    if: ${{ always() && (github.event_name != 'workflow_dispatch' || inputs.run_svg_validation) }}
     runs-on: ubuntu-latest
     needs: security-scan
     steps:
@@ -161,6 +172,7 @@ jobs:
 
   validate-manifest:
     name: Validate Manifest Sync
+    if: ${{ github.event_name != 'workflow_dispatch' || inputs.run_manifest_check }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

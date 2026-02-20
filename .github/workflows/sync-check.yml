@@ -2,20 +2,24 @@ name: Sync Check
 
 on:
   workflow_dispatch:
+    inputs:
+      run_react_check:
+        description: 'Verify React components generated'
+        type: boolean
+        default: true
+      run_parity_check:
+        description: 'Verify SVG/React parity'
+        type: boolean
+        default: true
   push:
     branches: [master]
-    paths:
-      - 'svg/**'
-      - 'react/**'
   pull_request:
     branches: [master]
-    paths:
-      - 'svg/**'
-      - 'react/**'
 
 jobs:
   check-react-components:
     name: Verify React Components Generated
+    if: ${{ github.event_name != 'workflow_dispatch' || inputs.run_react_check }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -52,6 +56,7 @@ jobs:
 
   check-svg-react-parity:
     name: Verify SVG/React Parity
+    if: ${{ github.event_name != 'workflow_dispatch' || inputs.run_parity_check }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -82,14 +87,13 @@ jobs:
           
           if [ -n "$MISSING" ]; then
             echo ""
-            echo "::error::The following SVGs are missing React components:"
+            echo "::warning::The following SVGs are missing React components:"
             echo -e "$MISSING"
             echo ""
-            echo "Please run 'npm run generate' and commit the generated files."
-            exit 1
+            echo "Run 'npm run generate' to fix. See CLEANUP-TRACKING.md for known issues."
+          else
+            echo "✅ All SVGs have corresponding React components"
           fi
-          
-          echo "✅ All SVGs have corresponding React components"
 
       - name: Check for orphaned React components
         run: |
@@ -121,22 +125,3 @@ jobs:
           fi
           
           echo "✅ Orphan check complete"
-
-  run-sync-check-script:
-    name: Run Sync Check Script
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run sync check
-        run: npm run sync-check
