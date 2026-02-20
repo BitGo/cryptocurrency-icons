@@ -6,6 +6,7 @@ const getColors = require('get-svg-colors');
 const manifest = require('../manifest.json');
 
 const overrides = new Map([
+	['BSC', 'BNB Smart Chain'],
 	['VRSC', 'VerusCoin'],
 	['GMR', 'Gimmer'],
 	['NEXO', 'Nexo'],
