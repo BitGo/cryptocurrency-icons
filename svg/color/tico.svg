@@ -1,13 +1,1 @@
-<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10" r="10" fill="url(#paint0_radial_15877_291357)"/>
-<path d="M11.3551 5.71289H5.50484L4.78418 8.83965H8.71347L7.08785 15.9059H10.596L12.2216 8.83965H15.492L16.2128 5.71289H14.476H11.3551Z" fill="white"/>
-<defs>
-<radialGradient id="paint0_radial_15877_291357" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.5 0.178571) scale(25.9184 38.4541)">
-<stop stop-color="#A7E64C"/>
-<stop offset="0.317104" stop-color="#029FD9"/>
-<stop offset="0.532491" stop-color="#611FE7"/>
-<stop offset="0.717823" stop-color="#8840E6"/>
-<stop offset="0.895642" stop-color="#65D5FF"/>
-</radialGradient>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><circle cx="10.5" cy="10" r="10" fill="url(#tico_svg-a)"/><path fill="#fff" d="M11.355 5.713h-5.85l-.72 3.127h3.928l-1.625 7.066h3.508l1.626-7.066h3.27l.72-3.127z"/><defs><radialGradient id="tico_svg-a" cx="0" cy="0" r="1" gradientTransform="matrix(25.9184 0 0 38.4541 .5 .179)" gradientUnits="userSpaceOnUse"><stop stop-color="#A7E64C"/><stop offset=".317" stop-color="#029FD9"/><stop offset=".532" stop-color="#611FE7"/><stop offset=".718" stop-color="#8840E6"/><stop offset=".896" stop-color="#65D5FF"/></radialGradient></defs></svg>

@@ -1,8 +1,1 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36">
-	<defs>
-		<image  width="36" height="36" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAAXNSR0IB2cksfwAAAIRQTFRF////8fHx2dnZ5+fnaGhoBQUFc3Nz6urqFhYWAAAAAQEBv7+/t7e3Gxsb7u7ugICAHBwcDQ0NeXl59vb28PDwHx8ftra2+/v7xcXFBAQEIiIi/v7+UVFR9fX1CgoKra2t/Pz8X19f/f39GBgYsLCwx8fHBgYGFxcX+Pj49PT029vb5OTkwQ3pqwAAAKBJREFUeJzt0k8LgkAQBfD3aqOCRKqLUBEEHvr+n0XwENSl6A9ZRIEIautttd2hW0HNbYYfO49hiTeKf/RJRKNj7kDKRJkddY2XyIcdDYwNijc78ok8VUCvBFqJI/iYuIzugFcA7YMD6Qp4xZDb+rCJpmegn0BEM550tL2M5kegDDYyUh0da900dbTgDpisZBSyOnUso2WFohfz/T/zN9ETO5UbJczHHm0AAAAASUVORK5CYII="/>
-	</defs>
-	<style>
-	</style>
-	<use id="Background" href="#img1" x="0" y="0"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" version="1.2" viewBox="0 0 36 36"><defs><image id="tempo_svg-a" width="36" height="36" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAAXNSR0IB2cksfwAAAIRQTFRF////8fHx2dnZ5+fnaGhoBQUFc3Nz6urqFhYWAAAAAQEBv7+/t7e3Gxsb7u7ugICAHBwcDQ0NeXl59vb28PDwHx8ftra2+/v7xcXFBAQEIiIi/v7+UVFR9fX1CgoKra2t/Pz8X19f/f39GBgYsLCwx8fHBgYGFxcX+Pj49PT029vb5OTkwQ3pqwAAAKBJREFUeJzt0k8LgkAQBfD3aqOCRKqLUBEEHvr+n0XwENSl6A9ZRIEIautttd2hW0HNbYYfO49hiTeKf/RJRKNj7kDKRJkddY2XyIcdDYwNijc78ok8VUCvBFqJI/iYuIzugFcA7YMD6Qp4xZDb+rCJpmegn0BEM550tL2M5kegDDYyUh0da900dbTgDpisZBSyOnUso2WFohfz/T/zN9ETO5UbJczHHm0AAAAASUVORK5CYII="/></defs><use href="#tempo_svg-a"/></svg>

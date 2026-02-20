@@ -1,14 +1,1 @@
-<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1494_170004)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M19.9514 39.9028C30.9703 39.9028 39.9028 30.9703 39.9028 19.9514C39.9028 8.93255 30.9703 0 19.9514 0C8.93255 0 0 8.93255 0 19.9514C0 30.9703 8.93255 39.9028 19.9514 39.9028ZM29.3914 20.6194L19.9221 12.723L10.4528 20.6194L7.94141 17.6079L19.9221 7.61719L31.9027 17.6079L29.3914 20.6194ZM21.3166 24.0515L29.3914 30.7851L31.9027 27.7735L23.8279 21.0399C21.5657 19.1534 18.2784 19.1534 16.0162 21.0399L7.94141 27.7735L10.4528 30.7851L18.5276 24.0515C19.3352 23.378 20.5089 23.378 21.3166 24.0515Z" fill="url(#paint0_linear_1494_170004)"/>
-</g>
-<defs>
-<linearGradient id="paint0_linear_1494_170004" x1="19.9514" y1="4.5" x2="19.9514" y2="36" gradientUnits="userSpaceOnUse">
-<stop stop-color="#82DEF3"/>
-<stop offset="1" stop-color="#FF60A7"/>
-</linearGradient>
-<clipPath id="clip0_1494_170004">
-<rect width="40" height="40" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40"><g clip-path="url(#ana_svg-a)"><path fill="url(#ana_svg-b)" fill-rule="evenodd" d="M19.951 39.903c11.02 0 19.952-8.933 19.952-19.952C39.903 8.933 30.97 0 19.95 0 8.933 0 0 8.933 0 19.951c0 11.02 8.933 19.952 19.951 19.952m9.44-19.284-9.469-7.896-9.47 7.896-2.51-3.011 11.98-9.99 11.98 9.99zm-8.074 3.433 8.074 6.733 2.512-3.012-8.075-6.733a6.1 6.1 0 0 0-7.812 0l-8.075 6.733 2.512 3.012 8.075-6.733a2.18 2.18 0 0 1 2.789 0" clip-rule="evenodd"/></g><defs><linearGradient id="ana_svg-b" x1="19.951" x2="19.951" y1="4.5" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#82DEF3"/><stop offset="1" stop-color="#FF60A7"/></linearGradient><clipPath id="ana_svg-a"><path fill="#fff" d="M0 0h40v40H0z"/></clipPath></defs></svg>

@@ -1,17 +1,1 @@
-<svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_11313_5384)">
-<rect y="0.303711" width="64" height="64" rx="32" fill="white"/>
-<path d="M32 64.3037C49.6731 64.3037 64 49.9768 64 32.3037C64 14.6306 49.6731 0.303711 32 0.303711C14.3269 0.303711 0 14.6306 0 32.3037C0 49.9768 14.3269 64.3037 32 64.3037Z" fill="url(#paint0_linear_11313_5384)"/>
-<path d="M21.2479 15.4078L17.7919 18.8638V32.5598L21.2479 36.0158H34.9439V42.9278H28.1599V39.4718H17.7919V46.3838L21.2479 49.8398H41.8559L45.3119 46.3838V32.5598L41.8559 29.1038H28.1599V22.1918H35.0719V25.6478H45.4399V18.7358L41.9839 15.2798H21.2479V15.4078Z" fill="white"/>
-</g>
-<rect x="0.5" y="0.803711" width="63" height="63" rx="31.5" stroke="#070B14" stroke-opacity="0.15"/>
-<defs>
-<linearGradient id="paint0_linear_11313_5384" x1="13.7216" y1="11.6765" x2="53.5936" y2="56.6685" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00ADEF"/>
-<stop offset="1" stop-color="#0084FF"/>
-</linearGradient>
-<clipPath id="clip0_11313_5384">
-<rect y="0.303711" width="64" height="64" rx="32" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="65" fill="none" viewBox="0 0 64 65"><g clip-path="url(#sand_svg-a)"><rect width="64" height="64" y=".304" fill="#fff" rx="32"/><path fill="url(#sand_svg-b)" d="M32 64.304c17.673 0 32-14.327 32-32s-14.327-32-32-32-32 14.327-32 32 14.327 32 32 32"/><path fill="#fff" d="m21.248 15.408-3.456 3.456V32.56l3.456 3.456h13.696v6.912H28.16v-3.456H17.792v6.912l3.456 3.456h20.608l3.456-3.456V32.56l-3.456-3.456H28.16v-6.912h6.912v3.456H45.44v-6.912l-3.456-3.456H21.248z"/></g><rect width="63" height="63" x=".5" y=".804" stroke="#070B14" stroke-opacity=".15" rx="31.5"/><defs><linearGradient id="sand_svg-b" x1="13.722" x2="53.594" y1="11.677" y2="56.669" gradientUnits="userSpaceOnUse"><stop stop-color="#00ADEF"/><stop offset="1" stop-color="#0084FF"/></linearGradient><clipPath id="sand_svg-a"><rect width="64" height="64" y=".304" fill="#fff" rx="32"/></clipPath></defs></svg>

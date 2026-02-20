@@ -1,9 +1,1 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-	<title>tomoe</title>
-	<defs>
-		<image  width="46" height="46" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuAQMAAABtd7l0AAAAAXNSR0IB2cksfwAAAAZQTFRFHh4eAAAA863TawAAAAJ0Uk5T/wDltzBKAAAAQklEQVR4nGOsb2BgYPjJyPwHSDEyMrD/YGhsYGQAA7pTDxSApAzjfyCf+Sfjfwagq/7CKYggVMkAORAaPNDAggQdAAVBFkcHdr/KAAAAAElFTkSuQmCC"/>
-	</defs>
-	<style>
-	</style>
-	<use id="Background" href="#img1" x="9" y="9"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1.2" viewBox="0 0 64 64"><defs><image id="tomoe_svg-a" width="46" height="46" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuAQMAAABtd7l0AAAAAXNSR0IB2cksfwAAAAZQTFRFHh4eAAAA863TawAAAAJ0Uk5T/wDltzBKAAAAQklEQVR4nGOsb2BgYPjJyPwHSDEyMrD/YGhsYGQAA7pTDxSApAzjfyCf+Sfjfwagq/7CKYggVMkAORAaPNDAggQdAAVBFkcHdr/KAAAAAElFTkSuQmCC"/></defs><use x="9" y="9" href="#tomoe_svg-a"/></svg>

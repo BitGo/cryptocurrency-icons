@@ -1,9 +1,1 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-	<title>edu</title>
-	<defs>
-		<image  width="64" height="64" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAAXNSR0IB2cksfwAAABtQTFRFAAAAAO2+AOu/EjXmFBvrCJ7PDWraDl3dBbjJH5CtYwAAAAl0Uk5TAP9A////////4T+knQAAAP5JREFUeJzVlk0SgjAMhRvEcYncwBP4M669uVdgxrUrbgAXcOoMtCW0Ca+KG7NgQb55ryVtAhke9fDs+CtK0hFCUp4TASiqmVnVxkBt5tFFQJwPhANonwC250Aq4CVIzTuCFINgQrrAKJEFKA6jBy0IDBK0IDBITEBx4amGAc7hyvOvh/egUEYRqFoKSxAB22cAfpMiYDoMhK8gA/YDYHPmRJMCcljSKzWGA2R9BpQncYkToOzhz4DtEQDFgeXLp0kAPXCx8sv99Ylaf6p/cLPg5YXX33vsbpy4O4esFgSbGG6D6zstbuZwHOCBgkcSHGp4LOLBCkezwcPdiL8Hb6UaeY2JE1Z/AAAAAElFTkSuQmCC"/>
-	</defs>
-	<style>
-	</style>
-	<use id="Background" href="#img1" x="0" y="0"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1.2" viewBox="0 0 64 64"><defs><image id="edu_svg-a" width="64" height="64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAAXNSR0IB2cksfwAAABtQTFRFAAAAAO2+AOu/EjXmFBvrCJ7PDWraDl3dBbjJH5CtYwAAAAl0Uk5TAP9A////////4T+knQAAAP5JREFUeJzVlk0SgjAMhRvEcYncwBP4M669uVdgxrUrbgAXcOoMtCW0Ca+KG7NgQb55ryVtAhke9fDs+CtK0hFCUp4TASiqmVnVxkBt5tFFQJwPhANonwC250Aq4CVIzTuCFINgQrrAKJEFKA6jBy0IDBK0IDBITEBx4amGAc7hyvOvh/egUEYRqFoKSxAB22cAfpMiYDoMhK8gA/YDYHPmRJMCcljSKzWGA2R9BpQncYkToOzhz4DtEQDFgeXLp0kAPXCx8sv99Ylaf6p/cLPg5YXX33vsbpy4O4esFgSbGG6D6zstbuZwHOCBgkcSHGp4LOLBCkezwcPdiL8Hb6UaeY2JE1Z/AAAAAElFTkSuQmCC"/></defs><use href="#edu_svg-a"/></svg>
