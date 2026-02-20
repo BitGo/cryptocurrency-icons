@@ -39,7 +39,7 @@ jobs:
           fi
           echo "✅ No script tags found"
 
-      - name: Check for javascript: URLs
+      - name: "Check for javascript: URLs"
         run: |
           echo "🔒 Scanning for javascript: URLs..."
           JS_URL_FILES=$(grep -ril "javascript:" svg/ 2>/dev/null || true)
