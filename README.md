@@ -124,7 +124,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for submission guidelines.
 ## Maintainers
 
 See [MAINTAINING.md](MAINTAINING.md) for maintainer workflows.
-
-## License
-
-[CC0-1.0](LICENSE) - Public Domain

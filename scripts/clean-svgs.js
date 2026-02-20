@@ -42,7 +42,9 @@ function getAllSvgFiles(dir, files = []) {
       }
     }
   } catch (e) {
-    // Directory doesn't exist, skip
+    if (e.code !== 'ENOENT') {
+      console.warn(`  Skipping ${dir}: ${e.message}`);
+    }
   }
   return files;
 }

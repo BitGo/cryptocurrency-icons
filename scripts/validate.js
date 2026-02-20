@@ -10,7 +10,12 @@ const { execSync } = require('child_process');
 const args = process.argv.slice(2);
 const shouldFix = args.includes('--fix');
 
-const SVG_DIR = path.join(__dirname, '..', 'svg', 'color');
+const SVG_DIRS = [
+  path.join(__dirname, '..', 'svg', 'color'),
+  path.join(__dirname, '..', 'svg', 'icon'),
+  path.join(__dirname, '..', 'svg', 'black'),
+  path.join(__dirname, '..', 'svg', 'white'),
+];
 const MAX_SIZE = 100 * 1024; // 100KB - hard limit
 const WARN_SIZE = 50 * 1024; // 50KB - warning threshold
 
@@ -102,60 +107,72 @@ function checkSecurity(content) {
 }
 
 function validate() {
-  const files = fs.readdirSync(SVG_DIR).filter(f => f.endsWith('.svg'));
   const issues = { errors: [], warnings: [], security: [] };
   let totalSize = 0;
+  let totalFiles = 0;
 
-  console.log(`\nValidating ${files.length} SVG files in svg/color/\n`);
-
-  for (const file of files) {
-    const filePath = path.join(SVG_DIR, file);
-    const stats = fs.statSync(filePath);
-    const content = fs.readFileSync(filePath, 'utf8');
-    totalSize += stats.size;
-
-    // Security checks (CRITICAL - always run first)
-    const securityIssues = checkSecurity(content);
-    for (const issue of securityIssues) {
-      issues.security.push(`${file}: ${issue}`);
+  for (const svgDir of SVG_DIRS) {
+    const dirName = path.relative(path.join(__dirname, '..'), svgDir);
+    
+    if (!fs.existsSync(svgDir)) {
+      continue;
     }
 
-    // Size checks
-    if (stats.size > MAX_SIZE) {
-      issues.errors.push(`${file}: ${formatSize(stats.size)} exceeds 100KB limit`);
-    } else if (stats.size > WARN_SIZE) {
-      issues.warnings.push(`${file}: ${formatSize(stats.size)} (consider optimizing)`);
-    }
+    const files = fs.readdirSync(svgDir).filter(f => f.endsWith('.svg'));
+    totalFiles += files.length;
 
-    // Embedded image check (base64 encoded rasters)
-    if (content.includes('data:image/png;base64') || 
-        content.includes('data:image/jpeg;base64') ||
-        content.includes('data:image/jpg;base64')) {
-      issues.errors.push(`${file}: Contains embedded base64 raster image`);
-    }
+    console.log(`\nValidating ${files.length} SVG files in ${dirName}/`);
 
-    // viewBox check
-    if (!content.includes('viewBox')) {
-      issues.warnings.push(`${file}: Missing viewBox attribute`);
-    }
+    for (const file of files) {
+      const filePath = path.join(svgDir, file);
+      const displayPath = `${dirName}/${file}`;
+      const stats = fs.statSync(filePath);
+      const content = fs.readFileSync(filePath, 'utf8');
+      totalSize += stats.size;
 
-    // Empty or invalid SVG check
-    if (!content.includes('<svg')) {
-      issues.errors.push(`${file}: Invalid SVG (no <svg> tag found)`);
-    }
+      // Security checks (CRITICAL - always run first)
+      const securityIssues = checkSecurity(content);
+      for (const issue of securityIssues) {
+        issues.security.push(`${displayPath}: ${issue}`);
+      }
 
-    // Check for empty file
-    if (content.trim().length === 0) {
-      issues.errors.push(`${file}: Empty file`);
+      // Size checks
+      if (stats.size > MAX_SIZE) {
+        issues.errors.push(`${displayPath}: ${formatSize(stats.size)} exceeds 100KB limit`);
+      } else if (stats.size > WARN_SIZE) {
+        issues.warnings.push(`${displayPath}: ${formatSize(stats.size)} (consider optimizing)`);
+      }
+
+      // Embedded image check (base64 encoded rasters)
+      if (content.includes('data:image/png;base64') || 
+          content.includes('data:image/jpeg;base64') ||
+          content.includes('data:image/jpg;base64')) {
+        issues.errors.push(`${displayPath}: Contains embedded base64 raster image`);
+      }
+
+      // viewBox check
+      if (!content.includes('viewBox')) {
+        issues.warnings.push(`${displayPath}: Missing viewBox attribute`);
+      }
+
+      // Empty or invalid SVG check
+      if (!content.includes('<svg')) {
+        issues.errors.push(`${displayPath}: Invalid SVG (no <svg> tag found)`);
+      }
+
+      // Check for empty file
+      if (content.trim().length === 0) {
+        issues.errors.push(`${displayPath}: Empty file`);
+      }
     }
   }
 
   // Summary
-  console.log('Summary');
+  console.log('\nSummary');
   console.log('-------');
-  console.log(`Total files: ${files.length}`);
+  console.log(`Total files: ${totalFiles}`);
   console.log(`Total size: ${formatSize(totalSize)}`);
-  console.log(`Average size: ${formatSize(Math.round(totalSize / files.length))}`);
+  console.log(`Average size: ${formatSize(Math.round(totalSize / totalFiles))}`);
   console.log('');
 
   // Report security issues (CRITICAL - always first)
