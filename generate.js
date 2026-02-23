@@ -1,5 +1,7 @@
 const { readdirSync, readFileSync } = require("fs");
 const { transform } = require("@svgr/core");
+const jsxModule = require("@svgr/plugin-jsx");
+const jsx = jsxModule.default || jsxModule;
 const { join } = require("path");
 const esbuild = require("esbuild");
 
@@ -102,7 +104,8 @@ const convertPlaceholders = (jsxCode) => {
 const generateComponents = (iconDir) => {
     const icons = readdirSync(iconDir);
     icons.forEach((file) => {
-        const [fileName] = file.split(".");
+        // Remove only the .svg extension, preserving dots in the filename (e.g., "0x0.ai.svg" -> "0x0.ai")
+        const fileName = file.replace(/\.svg$/, "");
         console.log(`Processing file: ${file}`);
         let iconName = fileName;
         if (iconName === "index") {
@@ -128,7 +131,7 @@ const generateComponents = (iconDir) => {
             {
                 expandProps: "end",
                 typescript: false,
-                jsx: false,
+                plugins: [jsx],
             },
             { filePath: svgPath }
         );
@@ -151,3 +154,53 @@ const generateComponents = (iconDir) => {
 
 generateComponents(ICON_DIR);
 generateComponents(ICON_COLOR_DIR);
+
+// Generate index.js and index.d.ts that export all components
+const fs = require("fs");
+
+function generateIndex() {
+    const reactDir = "./react";
+    const files = readdirSync(reactDir)
+        .filter(f => f.endsWith(".js") && f !== "index.js")
+        .sort();
+    
+    // Generate component name from filename (handle special characters)
+    const getComponentName = (filename) => {
+        const base = filename.replace(".js", "");
+        // Convert to valid JS identifier: replace invalid chars, ensure doesn't start with number
+        let name = base
+            .replace(/[^a-zA-Z0-9]/g, "_")
+            .replace(/^(\d)/, "_$1");
+        // PascalCase
+        return name.charAt(0).toUpperCase() + name.slice(1);
+    };
+
+    // Build exports
+    const exports = [];
+    const typeExports = [];
+    
+    for (const file of files) {
+        const componentName = getComponentName(file);
+        const importPath = `./${file.replace(".js", "")}`;
+        exports.push(`export { default as ${componentName} } from "${importPath}";`);
+        typeExports.push(`export const ${componentName}: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;`);
+    }
+
+    // Write index.js
+    const indexJs = `// Auto-generated index file - do not edit manually
+${exports.join("\n")}
+`;
+    fs.writeFileSync(join(reactDir, "index.js"), indexJs);
+    console.log(`\n✅ Generated react/index.js with ${exports.length} exports`);
+
+    // Write index.d.ts
+    const indexDts = `// Auto-generated TypeScript declarations - do not edit manually
+import * as React from "react";
+
+${typeExports.join("\n")}
+`;
+    fs.writeFileSync(join(reactDir, "index.d.ts"), indexDts);
+    console.log(`✅ Generated react/index.d.ts with ${typeExports.length} type declarations`);
+}
+
+generateIndex();

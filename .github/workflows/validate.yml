@@ -158,7 +158,7 @@ jobs:
       - name: Check for embedded base64 images (warning until cleanup complete)
         run: |
           echo "Checking for embedded raster images..."
-          BASE64_FILES=$(grep -rl "data:image/png;base64\|data:image/jpeg;base64\|data:image/jpg;base64" svg/color/*.svg 2>/dev/null || true)
+          BASE64_FILES=$(grep -rl "data:image/png;base64\|data:image/jpeg;base64\|data:image/jpg;base64" svg/color 2>/dev/null || true)
           if [ -n "$BASE64_FILES" ]; then
             COUNT=$(echo "$BASE64_FILES" | wc -l | tr -d ' ')
             echo ""

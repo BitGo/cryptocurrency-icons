@@ -2,13 +2,19 @@
 
 This document tracks pre-existing issues in the cryptocurrency-icons repository that require manual cleanup.
 
+## Legacy Allowlist
+
+Pre-existing problematic files are tracked in `legacy-allowlist.json`. These files are **grandfathered** - they produce warnings but don't fail CI.
+
+**New files with these issues will fail CI.**
+
 ## Summary
 
 | Issue Type | Count | Auto-fixable? |
 |------------|-------|---------------|
-| Embedded base64 raster images | ~1,250 | No |
-| Oversized SVGs (>100KB) | ~48 | Partial |
-| Missing viewBox | ~15 | No |
+| Embedded base64 raster images | ~1,188 | No |
+| Oversized SVGs (>100KB) | ~103 | Partial |
+| Missing viewBox | ~25 | No |
 
 ## Embedded Base64 Images (Priority: High)
 
@@ -64,7 +70,27 @@ When cleaning up icons:
 3. Run `npm run clean` to optimize
 4. Run `npm run generate` to update React component
 5. Run `npm run validate` to verify fix
-6. Submit PR
+6. **Remove the file from `legacy-allowlist.json`** (from both `oversized` and `embeddedBase64` arrays if applicable)
+7. Submit PR
+
+### Removing from Allowlist
+
+After fixing an icon, remove it from `legacy-allowlist.json`:
+
+```json
+{
+  "oversized": [
+    "aedz.svg",
+    // Remove "alex.svg" after fixing
+  ],
+  "embeddedBase64": [
+    "aedz.svg",
+    // Remove "alex.svg" after fixing
+  ]
+}
+```
+
+This ensures future regressions will be caught by CI.
 
 ## Related Scripts
 

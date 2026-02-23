@@ -1,16 +1,1 @@
-<svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_11313_1886)">
-<rect x="0.00537109" y="0.303711" width="64" height="64" rx="32" fill="white"/>
-<circle cx="31.8721" cy="32.3037" r="32" fill="white"/>
-<path d="M54.8054 49.1222L31.9819 36.0533L8.93872 49.1763L54.8054 49.1222Z" fill="#662D91"/>
-<path d="M31.9893 9.75385L31.9819 36.0534L54.8054 49.1222L31.9893 9.75385Z" fill="#9E1F63"/>
-<path d="M8.93872 49.1763L31.9819 36.0534L31.9892 9.75385L8.93872 49.1763Z" fill="#FF5000"/>
-<path d="M31.9351 25.7079L22.5129 41.4459H41.3995L31.9351 25.7079Z" fill="white" stroke="#FF5000" stroke-width="2.15" stroke-miterlimit="10"/>
-</g>
-<rect x="0.505371" y="0.803711" width="63" height="63" rx="31.5" stroke="#070B14" stroke-opacity="0.15"/>
-<defs>
-<clipPath id="clip0_11313_1886">
-<rect x="0.00537109" y="0.303711" width="64" height="64" rx="32" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="65" fill="none" viewBox="0 0 64 65"><g clip-path="url(#bat_svg-a)"><rect width="64" height="64" x=".005" y=".304" fill="#fff" rx="32"/><circle cx="31.872" cy="32.304" r="32" fill="#fff"/><path fill="#662D91" d="M54.805 49.122 31.982 36.053 8.939 49.176z"/><path fill="#9E1F63" d="m31.99 9.754-.008 26.3 22.823 13.068z"/><path fill="#FF5000" d="m8.939 49.176 23.043-13.123.007-26.3z"/><path fill="#fff" stroke="#FF5000" stroke-miterlimit="10" stroke-width="2.15" d="m31.935 25.708-9.422 15.738H41.4z"/></g><rect width="63" height="63" x=".505" y=".804" stroke="#070B14" stroke-opacity=".15" rx="31.5"/><defs><clipPath id="bat_svg-a"><rect width="64" height="64" x=".005" y=".304" fill="#fff" rx="32"/></clipPath></defs></svg>

@@ -17,7 +17,7 @@
 	{
 		"symbol": "AAVE",
 		"name": "AAVE",
-		"color": "#2ebac6"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "ABT",
@@ -37,7 +37,7 @@
 	{
 		"symbol": "ADA",
 		"name": "Cardano",
-		"color": "#0d1e30"
+		"color": "#0033ad"
 	},
 	{
 		"symbol": "ADD",
@@ -52,7 +52,7 @@
 	{
 		"symbol": "AE",
 		"name": "Aeternity",
-		"color": "#de3f6b"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "AEON",
@@ -67,7 +67,7 @@
 	{
 		"symbol": "AGI",
 		"name": "SingularityNET",
-		"color": "#6916ff"
+		"color": "#000000"
 	},
 	{
 		"symbol": "AGRS",
@@ -157,7 +157,7 @@
 	{
 		"symbol": "ATOM",
 		"name": "Cosmos",
-		"color": "#2e3148"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "AUDR",
@@ -192,7 +192,7 @@
 	{
 		"symbol": "BAT",
 		"name": "Basic Attention Token",
-		"color": "#ff5000"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "BAY",
@@ -217,7 +217,7 @@
 	{
 		"symbol": "BCH",
 		"name": "Bitcoin Cash",
-		"color": "#8dc351"
+		"color": "#0ac18e"
 	},
 	{
 		"symbol": "BCIO",
@@ -282,7 +282,7 @@
 	{
 		"symbol": "BNB",
 		"name": "Binance Coin",
-		"color": "#f3ba2f"
+		"color": "#f0b90b"
 	},
 	{
 		"symbol": "BNT",
@@ -326,7 +326,7 @@
 	},
 	{
 		"symbol": "BSC",
-	  	"name": "BNB Smart Chain",
+		"name": "BNB Smart Chain",
 		"color": "#f3ba2f"
 	},
 	{
@@ -337,7 +337,7 @@
 	{
 		"symbol": "BSV",
 		"name": "BitcoinSV",
-		"color": "#eab304"
+		"color": "#eab300"
 	},
 	{
 		"symbol": "BTC",
@@ -447,7 +447,7 @@
 	{
 		"symbol": "CHSB",
 		"name": "SwissBorg",
-		"color": "#01c38d"
+		"color": "#14e5bf"
 	},
 	{
 		"symbol": "CIX",
@@ -502,7 +502,7 @@
 	{
 		"symbol": "COMP",
 		"name": "Compound",
-		"color": "#00d395"
+		"color": "#070a0e"
 	},
 	{
 		"symbol": "COQUI",
@@ -522,7 +522,7 @@
 	{
 		"symbol": "CRV",
 		"name": "Curve DAO Token",
-		"color": "#40649f"
+		"color": "#000000"
 	},
 	{
 		"symbol": "CRW",
@@ -637,12 +637,12 @@
 	{
 		"symbol": "DOGE",
 		"name": "Dogecoin",
-		"color": "#c3a634"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "DOT",
 		"name": "Polkadot",
-		"color": "#e6007a"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "DRGN",
@@ -707,7 +707,7 @@
 	{
 		"symbol": "ELF",
 		"name": "aelf",
-		"color": "#2b5ebb"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "ELIX",
@@ -742,7 +742,7 @@
 	{
 		"symbol": "ENJ",
 		"name": "Enjin Coin",
-		"color": "#624dbf"
+		"color": "#7866d5"
 	},
 	{
 		"symbol": "ENTRP",
@@ -762,7 +762,7 @@
 	{
 		"symbol": "EOS",
 		"name": "EOS",
-		"color": "#000000"
+		"color": "#244edb"
 	},
 	{
 		"symbol": "EQLI",
@@ -922,7 +922,7 @@
 	{
 		"symbol": "GMT",
 		"name": "Mercury Protocol",
-		"color": "#e6bc7b"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "GNO",
@@ -957,7 +957,7 @@
 	{
 		"symbol": "GRT",
 		"name": "The Graph",
-		"color": "#5942cc"
+		"color": "#6747ed"
 	},
 	{
 		"symbol": "GSC",
@@ -1062,7 +1062,7 @@
 	{
 		"symbol": "ICP",
 		"name": "Internet Computer",
-		"color": "#292a2e"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "ICX",
@@ -1137,7 +1137,7 @@
 	{
 		"symbol": "KIN",
 		"name": "Kin",
-		"color": "#005fff"
+		"color": "#7d43ff"
 	},
 	{
 		"symbol": "KLOWN",
@@ -1182,7 +1182,7 @@
 	{
 		"symbol": "LINK",
 		"name": "ChainLink",
-		"color": "#2a5ada"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "LKK",
@@ -1202,7 +1202,7 @@
 	{
 		"symbol": "LRC",
 		"name": "Loopring",
-		"color": "#2ab6f6"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "LSK",
@@ -1212,7 +1212,7 @@
 	{
 		"symbol": "LTC",
 		"name": "Litecoin",
-		"color": "#bfbbbb"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "LUN",
@@ -1227,17 +1227,17 @@
 	{
 		"symbol": "MANA",
 		"name": "Decentraland",
-		"color": "#ff2d55"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "MATIC",
 		"name": "Polygon",
-		"color": "#6f41d8"
+		"color": "#7b3fe4"
 	},
 	{
 		"symbol": "MATIC",
 		"name": "Polygon",
-		"color": "#6f41d8"
+		"color": "#7b3fe4"
 	},
 	{
 		"symbol": "MAX",
@@ -1792,7 +1792,7 @@
 	{
 		"symbol": "SAND",
 		"name": "The Sandbox",
-		"color": "#04adef"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "SBD",
@@ -1872,7 +1872,7 @@
 	{
 		"symbol": "SNX",
 		"name": "Synthetix",
-		"color": "#5fcdf9"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "SOC",
@@ -1882,7 +1882,7 @@
 	{
 		"symbol": "SOL",
 		"name": "Solana",
-		"color": "#66f9a1"
+		"color": "#000000"
 	},
 	{
 		"symbol": "SPACEHBIT",
@@ -2072,7 +2072,7 @@
 	{
 		"symbol": "TRX",
 		"name": "TRON",
-		"color": "#ef0027"
+		"color": "#ff0013"
 	},
 	{
 		"symbol": "TUSD",
@@ -2107,17 +2107,17 @@
 	{
 		"symbol": "USD",
 		"name": "USD",
-		"color": "#6cde07"
+		"color": "#3bc726"
 	},
 	{
 		"symbol": "USDC",
 		"name": "USD Coin",
-		"color": "#3e73c4"
+		"color": "#2775ca"
 	},
 	{
 		"symbol": "USDT",
 		"name": "Tether",
-		"color": "#26a17b"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "UTK",
@@ -2207,7 +2207,7 @@
 	{
 		"symbol": "WBTC",
 		"name": "Wrapped Bitcoin",
-		"color": "#201a2d"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "WGR",
@@ -2332,7 +2332,7 @@
 	{
 		"symbol": "XRP",
 		"name": "XRP",
-		"color": "#23292f"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "XSG",
@@ -2342,7 +2342,7 @@
 	{
 		"symbol": "XTZ",
 		"name": "Tezos",
-		"color": "#a6e000"
+		"color": "#2c7df7"
 	},
 	{
 		"symbol": "XUC",
@@ -2382,7 +2382,7 @@
 	{
 		"symbol": "ZEC",
 		"name": "Zcash",
-		"color": "#ecb244"
+		"color": "#ffffff"
 	},
 	{
 		"symbol": "ZEL",
