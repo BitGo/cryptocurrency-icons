@@ -54,6 +54,7 @@
 	],
 	"scripts": {
 		"test": "npm run validate && npm run sync-check",
+		"test:pack": "node scripts/test-pack.js",
 		"generate": "node generate",
 		"manifest": "node scripts/manifest.js",
 		"clean": "node scripts/clean-svgs.js",
