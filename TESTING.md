@@ -127,6 +127,66 @@ This will:
 
 ## Common Issues
 
+### CodeArtifact 401 Unauthorized
+
+If you see `ERR_PNPM_FETCH_401` errors when installing:
+
+```
+ERR_PNPM_FETCH_401  GET https://private-*.d.codeartifact.*.amazonaws.com/npm/npm_private/@bitgo-private%2F...: Unauthorized - 401
+```
+
+Your AWS CodeArtifact token has expired. Refresh it first:
+
+```bash
+# Refresh credentials
+aws codeartifact login --tool npm --domain private --domain-owner 199765120567 --repository npm_private --region us-west-2
+
+# Then retry install
+pnpm add /path/to/bitgo-forks-cryptocurrency-icons-0.18.1.tgz
+```
+
+### Stale package - changes not reflected
+
+If you reinstall the tarball but changes aren't reflected, pnpm may be using a cached version:
+
+```bash
+# Clear the specific package from pnpm cache
+rm -rf node_modules/.pnpm/@bitgo-forks+cryptocurrency-icons*
+
+# Reinstall
+pnpm add /path/to/bitgo-forks-cryptocurrency-icons-0.18.1.tgz
+```
+
+Or force a fresh install:
+
+```bash
+# Remove and reinstall
+pnpm remove @bitgo-forks/cryptocurrency-icons
+pnpm add /path/to/bitgo-forks-cryptocurrency-icons-0.18.1.tgz
+```
+
+### "Module not found" for specific icon
+
+If Vite complains about a missing icon like `react/core.js`:
+
+```
+Failed to resolve import "@bitgo-forks/cryptocurrency-icons/react/core.js"
+```
+
+1. Check if the icon exists in the tarball:
+   ```bash
+   tar -tzf bitgo-forks-cryptocurrency-icons-*.tgz | grep "core.js"
+   ```
+
+2. If missing, add the SVG and regenerate:
+   ```bash
+   # Add the SVG to svg/color/
+   npm run generate
+   npm run test:pack
+   ```
+
+3. Reinstall the updated tarball (see "Stale package" above)
+
 ### "Module not found" after linking
 
 ```bash
@@ -135,7 +195,24 @@ rm -rf node_modules
 pnpm install
 ```
 
-### Stale cache in consuming project
+### Vite still can't resolve import (file exists in node_modules)
+
+If Vite shows "Failed to resolve import" but the file actually exists in `node_modules`:
+
+```bash
+# Check if file exists
+ls node_modules/@bitgo-forks/cryptocurrency-icons/react/core.js
+
+# If it exists, clear Vite's cache
+rm -rf node_modules/.vite
+
+# Restart dev server
+pnpm dev
+```
+
+Vite aggressively caches dependency resolution. Clearing `.vite` forces a full re-scan.
+
+### Stale bundler cache (general)
 
 ```bash
 # Clear bundler cache
