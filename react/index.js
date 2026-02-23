@@ -406,6 +406,7 @@ export { default as Comp } from "./comp";
 export { default as Conv } from "./conv";
 export { default as Copm } from "./copm";
 export { default as Coqui } from "./coqui";
+export { default as Core } from "./core";
 export { default as Coredao } from "./coredao";
 export { default as Coreum } from "./coreum";
 export { default as Cos } from "./cos";

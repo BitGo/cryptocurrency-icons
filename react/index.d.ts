@@ -408,6 +408,7 @@ export const Comp: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string 
 export const Conv: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Copm: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Coqui: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Core: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Coredao: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Coreum: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Cos: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
