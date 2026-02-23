@@ -695,6 +695,7 @@ export { default as Fdusd } from "./fdusd";
 export { default as Fei } from "./fei";
 export { default as Fet } from "./fet";
 export { default as Fet1 } from "./fet1";
+export { default as Fetchai } from "./fetchai";
 export { default as Ff } from "./ff";
 export { default as Ff1 } from "./ff1";
 export { default as Fft } from "./fft";

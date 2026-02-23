@@ -697,6 +697,7 @@ export const Fdusd: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string
 export const Fei: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Fet: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Fet1: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Fetchai: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ff: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ff1: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Fft: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
