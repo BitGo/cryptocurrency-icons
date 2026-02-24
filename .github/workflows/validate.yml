@@ -137,38 +137,92 @@ jobs:
       - name: Run SVG validation (includes security checks)
         run: npm run validate
 
-      - name: Check for oversized files (warning until cleanup complete)
+      - name: Check for oversized files
         run: |
           echo "Checking for SVG files over 100KB..."
-          LARGE_FILES=$(find svg/color -name "*.svg" -size +100k 2>/dev/null | head -20)
-          if [ -n "$LARGE_FILES" ]; then
+          
+          # Load legacy allowlist
+          ALLOWED=$(jq -r '.oversized[]' legacy-allowlist.json 2>/dev/null || echo "")
+          
+          # Find all oversized files
+          LARGE_FILES=$(find svg/color -name "*.svg" -size +100k 2>/dev/null || true)
+          
+          NEW_VIOLATIONS=""
+          LEGACY_COUNT=0
+          
+          for file in $LARGE_FILES; do
+            BASENAME=$(basename "$file")
+            if echo "$ALLOWED" | grep -qx "$BASENAME"; then
+              LEGACY_COUNT=$((LEGACY_COUNT + 1))
+            else
+              NEW_VIOLATIONS="$NEW_VIOLATIONS$file\n"
+            fi
+          done
+          
+          # Warn on legacy files
+          if [ $LEGACY_COUNT -gt 0 ]; then
+            echo "::warning::$LEGACY_COUNT legacy oversized files (grandfathered in legacy-allowlist.json)"
+          fi
+          
+          # FAIL on new files
+          if [ -n "$NEW_VIOLATIONS" ]; then
             echo ""
-            echo "::warning::The following SVG files exceed the 100KB limit:"
-            echo "$LARGE_FILES" | while read file; do
-              SIZE=$(ls -lh "$file" | awk '{print $5}')
-              echo "  ⚠️  $file ($SIZE)"
+            echo "::error::NEW oversized SVG files detected (not in legacy-allowlist.json):"
+            echo -e "$NEW_VIOLATIONS" | while read f; do
+              if [ -n "$f" ]; then
+                SIZE=$(ls -lh "$f" | awk '{print $5}')
+                echo "  🚨 $f ($SIZE)"
+              fi
             done
             echo ""
-            echo "SVG icons should be proper vector files, not embedded raster images."
-            echo "See CLEANUP-TRACKING.md for the list of files requiring cleanup."
-          else
-            echo "✅ All SVG files are within size limits"
+            echo "New SVG icons must be under 100KB. Convert to proper vector graphics."
+            echo "See CONTRIBUTING.md for icon requirements."
+            exit 1
           fi
+          
+          echo "✅ No new oversized files"
 
-      - name: Check for embedded base64 images (warning until cleanup complete)
+      - name: Check for embedded base64 images
         run: |
           echo "Checking for embedded raster images..."
+          
+          # Load legacy allowlist
+          ALLOWED=$(jq -r '.embeddedBase64[]' legacy-allowlist.json 2>/dev/null || echo "")
+          
+          # Find all files with base64 images
           BASE64_FILES=$(grep -rl "data:image/png;base64\|data:image/jpeg;base64\|data:image/jpg;base64" svg/color 2>/dev/null || true)
-          if [ -n "$BASE64_FILES" ]; then
-            COUNT=$(echo "$BASE64_FILES" | wc -l | tr -d ' ')
-            echo ""
-            echo "::warning::Found $COUNT SVG files with embedded base64 raster images"
-            echo ""
-            echo "SVG files should be proper vector graphics."
-            echo "See CLEANUP-TRACKING.md for the list of files requiring cleanup."
-          else
-            echo "✅ No embedded raster images found"
+          
+          NEW_VIOLATIONS=""
+          LEGACY_COUNT=0
+          
+          for file in $BASE64_FILES; do
+            BASENAME=$(basename "$file")
+            if echo "$ALLOWED" | grep -qx "$BASENAME"; then
+              LEGACY_COUNT=$((LEGACY_COUNT + 1))
+            else
+              NEW_VIOLATIONS="$NEW_VIOLATIONS$file\n"
+            fi
+          done
+          
+          # Warn on legacy files
+          if [ $LEGACY_COUNT -gt 0 ]; then
+            echo "::warning::$LEGACY_COUNT legacy files with embedded images (grandfathered in legacy-allowlist.json)"
           fi
+          
+          # FAIL on new files
+          if [ -n "$NEW_VIOLATIONS" ]; then
+            echo ""
+            echo "::error::NEW SVG files with embedded base64 images detected:"
+            echo -e "$NEW_VIOLATIONS" | while read f; do
+              [ -n "$f" ] && echo "  🚨 $f"
+            done
+            echo ""
+            echo "New SVG icons must be proper vector graphics, not embedded raster images."
+            echo "See CONTRIBUTING.md for icon requirements."
+            exit 1
+          fi
+          
+          echo "✅ No new base64 violations"
 
   validate-manifest:
     name: Validate Manifest Sync
