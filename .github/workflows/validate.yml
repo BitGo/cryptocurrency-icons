@@ -141,7 +141,8 @@ jobs:
         run: |
           echo "Checking for SVG files over 100KB..."
           
-          # Load legacy allowlist
+          # Load legacy allowlist (one filename per line for grep -qx matching)
+          # Falls back to empty if file missing - all files would be treated as new violations
           ALLOWED=$(jq -r '.oversized[]' legacy-allowlist.json 2>/dev/null || echo "")
           
           # Find all oversized files
@@ -155,20 +156,20 @@ jobs:
             if echo "$ALLOWED" | grep -qx "$BASENAME"; then
               LEGACY_COUNT=$((LEGACY_COUNT + 1))
             else
-              NEW_VIOLATIONS="$NEW_VIOLATIONS$file\n"
+              NEW_VIOLATIONS="${NEW_VIOLATIONS}${file}"$'\n'
             fi
           done
           
-          # Warn on legacy files
-          if [ $LEGACY_COUNT -gt 0 ]; then
+          # Warn on legacy files (grandfathered tech debt)
+          if [ "$LEGACY_COUNT" -gt 0 ]; then
             echo "::warning::$LEGACY_COUNT legacy oversized files (grandfathered in legacy-allowlist.json)"
           fi
           
-          # FAIL on new files
+          # FAIL on new files not in allowlist
           if [ -n "$NEW_VIOLATIONS" ]; then
             echo ""
             echo "::error::NEW oversized SVG files detected (not in legacy-allowlist.json):"
-            echo -e "$NEW_VIOLATIONS" | while read f; do
+            printf '%s' "$NEW_VIOLATIONS" | while IFS= read -r f; do
               if [ -n "$f" ]; then
                 SIZE=$(ls -lh "$f" | awk '{print $5}')
                 echo "  🚨 $f ($SIZE)"
@@ -186,10 +187,10 @@ jobs:
         run: |
           echo "Checking for embedded raster images..."
           
-          # Load legacy allowlist
+          # Load legacy allowlist (one filename per line for grep -qx matching)
           ALLOWED=$(jq -r '.embeddedBase64[]' legacy-allowlist.json 2>/dev/null || echo "")
           
-          # Find all files with base64 images
+          # Find all files with embedded base64 raster images
           BASE64_FILES=$(grep -rl "data:image/png;base64\|data:image/jpeg;base64\|data:image/jpg;base64" svg/color 2>/dev/null || true)
           
           NEW_VIOLATIONS=""
@@ -200,20 +201,20 @@ jobs:
             if echo "$ALLOWED" | grep -qx "$BASENAME"; then
               LEGACY_COUNT=$((LEGACY_COUNT + 1))
             else
-              NEW_VIOLATIONS="$NEW_VIOLATIONS$file\n"
+              NEW_VIOLATIONS="${NEW_VIOLATIONS}${file}"$'\n'
             fi
           done
           
-          # Warn on legacy files
-          if [ $LEGACY_COUNT -gt 0 ]; then
+          # Warn on legacy files (grandfathered tech debt)
+          if [ "$LEGACY_COUNT" -gt 0 ]; then
             echo "::warning::$LEGACY_COUNT legacy files with embedded images (grandfathered in legacy-allowlist.json)"
           fi
           
-          # FAIL on new files
+          # FAIL on new files not in allowlist
           if [ -n "$NEW_VIOLATIONS" ]; then
             echo ""
             echo "::error::NEW SVG files with embedded base64 images detected:"
-            echo -e "$NEW_VIOLATIONS" | while read f; do
+            printf '%s' "$NEW_VIOLATIONS" | while IFS= read -r f; do
               [ -n "$f" ] && echo "  🚨 $f"
             done
             echo ""
