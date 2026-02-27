@@ -1295,5 +1295,32 @@
     "zrc.svg",
     "zro.svg",
     "zrx.svg"
+  ],
+  "missingViewBox": [
+    "aitech.svg",
+    "cashplus.svg",
+    "eos_box.svg",
+    "ethchex.svg",
+    "ethlinea.svg",
+    "ethsix.svg",
+    "ethton.svg",
+    "gho.svg",
+    "hsol.svg",
+    "isei.svg",
+    "moodeng.svg",
+    "npc.svg",
+    "pv01.svg",
+    "rare.svg",
+    "rose.svg",
+    "soltxsgd.svg",
+    "soltxusd.svg",
+    "solxyo.svg",
+    "solzig.svg",
+    "superbonds.svg",
+    "tsteth.svg",
+    "umint.svg",
+    "vcnt.svg",
+    "waxp.svg",
+    "ztx.svg"
   ]
 }
