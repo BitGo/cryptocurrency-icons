@@ -411,6 +411,7 @@ export const Common: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: strin
 export const Comp: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Conv: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Copm: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Copr3: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Coqui: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Core: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Coredao: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
@@ -1722,6 +1723,7 @@ export const Tbtc1: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string
 export const Tbx: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Tcad: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Tco: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Tcoreum: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Tcs: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Tdai: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Tea: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
@@ -1992,6 +1994,7 @@ export const Wpr: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }
 export const Wpx: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Wrose: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Wrx: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Wsei: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Wsohm: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Wsteth: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Wtao: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
