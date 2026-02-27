@@ -153,9 +153,14 @@ function validate() {
       }
     }
 
-    // viewBox check
+    // viewBox check - error for new files, warn for grandfathered files
     if (!content.includes('viewBox')) {
-      issues.warnings.push(`${file}: Missing viewBox attribute`);
+      const isLegacy = legacyAllowlist.missingViewBox && legacyAllowlist.missingViewBox.includes(file);
+      if (isLegacy) {
+        issues.warnings.push(`${file}: Missing viewBox attribute (legacy)`);
+      } else {
+        issues.errors.push(`${file}: Missing viewBox attribute`);
+      }
     }
 
     // Empty or invalid SVG check
