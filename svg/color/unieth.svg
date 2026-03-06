@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70.7%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#FC6BF8"/>
+      <stop offset="45%" stop-color="#F832CF"/>
+      <stop offset="100%" stop-color="#F50DB4"/>
+    </radialGradient>
+    <clipPath id="pinkMask">
+      <!-- Top-left quadrant: full square -->
+      <rect x="0" y="0" width="32" height="32"/>
+      <!-- Top-right quadrant: arc area only -->
+      <path d="M 32 0 Q 32 32 64 32 L 64 0 Z"/>
+      <!-- Bottom-left quadrant: arc area only -->
+      <path d="M 0 32 Q 32 32 32 64 L 0 64 Z"/>
+      <!-- Bottom-right quadrant: full square -->
+      <rect x="32" y="32" width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <!-- White background -->
+  <rect width="64" height="64" fill="white"/>
+  <!-- Pink gradient clipped to the pink regions -->
+  <rect width="64" height="64" fill="url(#bg)" clip-path="url(#pinkMask)"/>
+</svg>
