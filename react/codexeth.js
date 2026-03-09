@@ -1,0 +1,3 @@
+import * as React from "react";
+const SvgCodexeth = ({ prefixId = "", ...props }) => /* @__PURE__ */ React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: 64, height: 64, viewBox: "0 0 64 64", fill: "none", ...props }, /* @__PURE__ */ React.createElement("circle", { cx: 32, cy: 32, r: 32, fill: "#0D9488" }), /* @__PURE__ */ React.createElement("circle", { cx: 32, cy: 32, r: 31.5, stroke: "#070B14", strokeOpacity: 0.15, strokeWidth: 1, fill: "none" }), /* @__PURE__ */ React.createElement("circle", { cx: 32, cy: 28, r: 6, fill: "#fff", fillOpacity: 0.95 }), /* @__PURE__ */ React.createElement("circle", { cx: 32, cy: 38, r: 4, fill: "#fff", fillOpacity: 0.95 }));
+export default SvgCodexeth;
