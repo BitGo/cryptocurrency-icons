@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
   <circle cx="32" cy="32" r="32" fill="#0D9488"/>
   <circle cx="32" cy="32" r="31.5" stroke="#070B14" stroke-opacity=".15" stroke-width="1" fill="none"/>
-  <circle cx="32" cy="28" r="6" fill="#fff" fill-opacity=".95"/>
-  <circle cx="32" cy="38" r="4" fill="#fff" fill-opacity=".95"/>
+  <!-- Codex S-curve symbol (flowing lines) -->
+  <path fill="#fff" d="M28 20c0 0 16 0 16 8 0 4-6 8-12 8s-12-4-12-8c0-8 16-8 16-8z"/>
+  <path fill="#fff" d="M36 44c0 0-16 0-16-8 0-4 6-8 12-8s12 4 12 8c0 8-16 8-16 8z"/>
 </svg>
