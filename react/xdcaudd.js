@@ -1,0 +1,3 @@
+import * as React from "react";
+const SvgXdcaudd = ({ prefixId = "", ...props }) => /* @__PURE__ */ React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: 32, height: 32, viewBox: "0 0 32 32", ...props }, /* @__PURE__ */ React.createElement("rect", { width: "100%", height: "100%", fill: "#1a1a1a", shapeRendering: "crispEdges" }), /* @__PURE__ */ React.createElement("circle", { cx: 16, cy: 16, r: 11, fill: "none", stroke: "#4400DD", strokeWidth: 2 }), /* @__PURE__ */ React.createElement("text", { x: 16, y: 20.5, textAnchor: "middle", fontFamily: "Arial,sans-serif", fontWeight: "bold", fontSize: 13, fill: "#4400DD" }, "A$"));
+export default SvgXdcaudd;
