@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect width="100%" height="100%" fill="#1a1a1a" shape-rendering="crispEdges"/>
+  <circle cx="16" cy="16" r="13" fill="#1D4ED8"/>
+  <!-- Partial white arc - top -->
+  <path d="M10 6.5 A11 11 0 0 1 25.5 12" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" opacity="0.85"/>
+  <!-- Partial white arc - bottom -->
+  <path d="M22 25.5 A11 11 0 0 1 6.5 20" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" opacity="0.85"/>
+  <!-- StraitsX stylized X: two crossing swoosh curves -->
+  <!-- Top-left to bottom-right swoosh -->
+  <path d="M5 11 C7 11 9 14 10.5 16 C12 18 13 19 14 19" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Bottom-left to top-right swoosh -->  
+  <path d="M5 21 C7 21 9 18 10.5 16 C12 14 13 13 14 12" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- SGD text -->
+  <text x="21.5" y="19.5" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="bold" font-size="7" fill="white">SGD</text>
+</svg>

@@ -29,6 +29,7 @@ export const Adaasnek: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: str
 export const Adaawlf: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Adai: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Adalcc: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Adausdcx: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Adbeon: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Add: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ads: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
@@ -203,6 +204,8 @@ export const Baseethsoon: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: 
 export const Baseethtowns: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Baseethusde: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Baseethwave: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Baseethxsgd: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Baseethxusd: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Basic: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Bat: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Bax: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
@@ -623,12 +626,16 @@ export const Eta: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }
 export const Etc: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Eth: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ethaeur: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Ethapxusd: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Ethaudx: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ethausd: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ethbard: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ethblock: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ethchex: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Ethchfau: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ethctusd1cx: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ethcusd: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Ethdxi: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Etheden: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ethenastakedusdearm: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Etherfiarm: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
@@ -650,6 +657,7 @@ export const Ethpro: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: strin
 export const Ethprompt: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ethptcusdo28may2026: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ethpyr: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Ethq: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ethresolv: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ethsc: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Ethsfp: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
@@ -1630,6 +1638,7 @@ export const Solmeta: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: stri
 export const Solnpc: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Solo: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Solprcl: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Solskr: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Solsoon: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Soltbill: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Soltxsgd: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
@@ -1704,6 +1713,7 @@ export const Sui: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }
 export const Suidmc: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Suins: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Suiusde: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Suiusdsui: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Sumo: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Sun: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Super: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
@@ -2040,6 +2050,7 @@ export const Xchng: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string
 export const Xcn: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Xcp: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Xdc: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
+export const Xdcaudd: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Xdccre: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Xdcgama: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;
 export const Xdcsrx: React.FC<React.SVGProps<SVGSVGElement> & { prefixId?: string }>;

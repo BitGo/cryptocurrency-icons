@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect width="100%" height="100%" fill="#1a1a1a" shape-rendering="crispEdges"/>
+  <!-- 5x5 pixel grid, each cell ~5.6px, using 5px blocks with 1px gap -->
+  <!-- Using a clean grid: 5 cols x 5 rows, cell size 6px, starting at x=1, y=1 -->
+  <!-- Row 0 (top): cols 1,2 filled -->
+  <rect x="7" y="1" width="6" height="6" fill="#F2D000"/>
+  <rect x="13" y="1" width="6" height="6" fill="#F2D000"/>
+  <!-- Row 1: cols 0,3 filled -->
+  <rect x="1" y="7" width="6" height="6" fill="#F2D000"/>
+  <rect x="19" y="7" width="6" height="6" fill="#F2D000"/>
+  <!-- Row 2: cols 0,2,3 filled -->
+  <rect x="1" y="13" width="6" height="6" fill="#F2D000"/>
+  <rect x="13" y="13" width="6" height="6" fill="#F2D000"/>
+  <rect x="19" y="13" width="6" height="6" fill="#F2D000"/>
+  <!-- Row 3: cols 1,2,3 filled -->
+  <rect x="7" y="19" width="6" height="6" fill="#F2D000"/>
+  <rect x="13" y="19" width="6" height="6" fill="#F2D000"/>
+  <rect x="19" y="19" width="6" height="6" fill="#F2D000"/>
+  <!-- Row 4 (tail): col 3 filled -->
+  <rect x="19" y="25" width="6" height="6" fill="#F2D000"/>
+</svg>
